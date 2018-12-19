@@ -1,0 +1,2316 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-s1" class="navigator-link">
+              <span class="suite-name border-failed">s1</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-s1" class="navigator-link ">
+                    <span>D:\demo\ChanZhi\ChanZhi\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-s1" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-s1" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-s1" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-s1" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-s1" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-s1" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">50 methods, 2 failed,   48 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-s1" class="hide-methods failed suite-s1"> (hide)</a> <!-- hide-methods failed suite-s1 -->
+                      <a href="#" panel-name="suite-s1" class="show-methods failed suite-s1"> (show)</a> <!-- show-methods failed suite-s1 -->
+                    </span>
+                    <div class="method-list-content failed suite-s1">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.MaintainClass" class="method navigator-link" hash-for-method="maintanClass">maintanClass</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.Openlogin" class="method navigator-link" hash-for-method="openlogin">openlogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-s1 -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-s1" class="hide-methods passed suite-s1"> (hide)</a> <!-- hide-methods passed suite-s1 -->
+                      <a href="#" panel-name="suite-s1" class="show-methods passed suite-s1"> (show)</a> <!-- show-methods passed suite-s1 -->
+                    </span>
+                    <div class="method-list-content passed suite-s1">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.FriendlyLink" class="method navigator-link" hash-for-method="aclass">aclass</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.AriticalClass" class="method navigator-link" hash-for-method="aclass">aclass</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.BlogClass" class="method navigator-link" hash-for-method="aclass">aclass</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.BearPaw" class="method navigator-link" hash-for-method="aclass">aclass</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.AddContent" class="method navigator-link" hash-for-method="aclass">aclass</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.AddCompanyAddress" class="method navigator-link" hash-for-method="addAddress">addAddress</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.AddCss" class="method navigator-link" hash-for-method="addCss">addCss</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.AddJs" class="method navigator-link" hash-for-method="addJs">addJs</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.AddCompanyMessage" class="method navigator-link" hash-for-method="addMessage">addMessage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.AddScoreRule" class="method navigator-link" hash-for-method="addRule">addRule</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.AddStyle" class="method navigator-link" hash-for-method="addStyle">addStyle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.AddWhitelist" class="method navigator-link" hash-for-method="addWlist">addWlist</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.AddBlacklist" class="method navigator-link" hash-for-method="addblist">addblist</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.add_Essay1" class="method navigator-link" hash-for-method="addessay">addessay</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.AddFilesupload" class="method navigator-link" hash-for-method="addfupload">addfupload</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.AddSecuritycode" class="method navigator-link" hash-for-method="addscode">addscode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.AddSetting" class="method navigator-link" hash-for-method="addset">addset</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.Admin_Login_Cz" class="method navigator-link" hash-for-method="adminlogin(yinlu, 123456)">adminlogin(yinlu, 123456)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.Backups" class="method navigator-link" hash-for-method="backups">backups</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.Blog" class="method navigator-link" hash-for-method="blog">blog</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.CDN" class="method navigator-link" hash-for-method="cdn">cdn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.Credit" class="method navigator-link" hash-for-method="credit">credit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.Expressage" class="method navigator-link" hash-for-method="expressage">expressage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.FlowStatistics" class="method navigator-link" hash-for-method="flow">flow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.Front_Login_Cz" class="method navigator-link" hash-for-method="frontlogin">frontlogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.Front_Resigh_Cz" class="method navigator-link" hash-for-method="frontresighter">frontresighter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.Groups" class="method navigator-link" hash-for-method="group">group</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.HandBook" class="method navigator-link" hash-for-method="handbook">handbook</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.KeyWords" class="method navigator-link" hash-for-method="keywords">keywords</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.Language" class="method navigator-link" hash-for-method="language">language</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.BatchSubmission" class="method navigator-link" hash-for-method="member">member</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.MemberBonusPoints" class="method navigator-link" hash-for-method="member">member</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.PlateManage" class="method navigator-link" hash-for-method="plate">plate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.Product" class="method navigator-link" hash-for-method="product">product</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.Registration" class="method navigator-link" hash-for-method="registration">registration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.Send" class="method navigator-link" hash-for-method="send">send</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.SetAddressType" class="method navigator-link" hash-for-method="setAddtype">setAddtype</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.SetAdministrator" class="method navigator-link" hash-for-method="setAdmin">setAdmin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.SetCache" class="method navigator-link" hash-for-method="setCache">setCache</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.SetDesignList" class="method navigator-link" hash-for-method="setDesignList">setDesignList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.SetDesignThumbnail" class="method navigator-link" hash-for-method="setDesignThumbmail">setDesignThumbmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.SetDomainName" class="method navigator-link" hash-for-method="setDomainname">setDomainname</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.SetFlowStatistics" class="method navigator-link" hash-for-method="setFlow">setFlow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.SetSecurity" class="method navigator-link" hash-for-method="setSecurity">setSecurity</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.add_Single1" class="method navigator-link" hash-for-method="single">single</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.SiteSetting" class="method navigator-link" hash-for-method="site">site</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.Update" class="method navigator-link" hash-for-method="update">update</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-s1" title="com.webtest.demo.Yuming" class="method navigator-link" hash-for-method="yuming">yuming</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-s1 -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-s1" class="panel s1">
+          <div class="suite-s1-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.webtest.demo.MaintainClass</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="maintanClass">
+                  </a> <!-- maintanClass -->
+                  <span class="method-name">maintanClass</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: 
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
+System info: host: &apos;DESKTOP-BCVV7R2&apos;, ip: &apos;169.254.216.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;9.0.4&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\ASUS\AppData\Local\Temp\rust_mozprofile.1N4HzeUfDczT, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=56.0, platformVersion=10.0, moz:processID=9232, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: 67c18029-7125-4eeb-b7ce-49ea5465fa35
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.webtest.core.WebDriverEngine.click(WebDriverEngine.java:141)
+	at com.webtest.demo.MaintainClass.maintanClass(MaintainClass.java:13)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-failed -->
+          <div class="suite-s1-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.webtest.demo.Openlogin</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="openlogin">
+                  </a> <!-- openlogin -->
+                  <span class="method-name">openlogin</span>
+                  <div class="stack-trace">org.openqa.selenium.NoAlertPresentException: No modal dialog is currently open
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
+System info: host: &apos;DESKTOP-BCVV7R2&apos;, ip: &apos;169.254.216.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;9.0.4&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\ASUS\AppData\Local\Temp\rust_mozprofile.1N4HzeUfDczT, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=56.0, platformVersion=10.0, moz:processID=9232, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: 67c18029-7125-4eeb-b7ce-49ea5465fa35
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:643)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:972)
+	at com.webtest.core.WebDriverEngine.getAlert(WebDriverEngine.java:211)
+	at com.webtest.core.WebDriverEngine.alertAccept(WebDriverEngine.java:240)
+	at com.webtest.demo.Openlogin.openlogin(Openlogin.java:64)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-failed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.AddCss</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addCss">
+                  </a> <!-- addCss -->
+                  <span class="method-name">addCss</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.add_Essay1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addessay">
+                  </a> <!-- addessay -->
+                  <span class="method-name">addessay</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.Front_Login_Cz</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="frontlogin">
+                  </a> <!-- frontlogin -->
+                  <span class="method-name">frontlogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.Registration</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="registration">
+                  </a> <!-- registration -->
+                  <span class="method-name">registration</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.AriticalClass</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="aclass">
+                  </a> <!-- aclass -->
+                  <span class="method-name">aclass</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.AddSecuritycode</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addscode">
+                  </a> <!-- addscode -->
+                  <span class="method-name">addscode</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.SetDomainName</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="setDomainname">
+                  </a> <!-- setDomainname -->
+                  <span class="method-name">setDomainname</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.AddFilesupload</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addfupload">
+                  </a> <!-- addfupload -->
+                  <span class="method-name">addfupload</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.CDN</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="cdn">
+                  </a> <!-- cdn -->
+                  <span class="method-name">cdn</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.Groups</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="group">
+                  </a> <!-- group -->
+                  <span class="method-name">group</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.SetCache</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="setCache">
+                  </a> <!-- setCache -->
+                  <span class="method-name">setCache</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.Backups</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="backups">
+                  </a> <!-- backups -->
+                  <span class="method-name">backups</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.AddSetting</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addset">
+                  </a> <!-- addset -->
+                  <span class="method-name">addset</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.AddCompanyMessage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addMessage">
+                  </a> <!-- addMessage -->
+                  <span class="method-name">addMessage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.AddScoreRule</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addRule">
+                  </a> <!-- addRule -->
+                  <span class="method-name">addRule</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.AddJs</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addJs">
+                  </a> <!-- addJs -->
+                  <span class="method-name">addJs</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.Product</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="product">
+                  </a> <!-- product -->
+                  <span class="method-name">product</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.KeyWords</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="keywords">
+                  </a> <!-- keywords -->
+                  <span class="method-name">keywords</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.SetFlowStatistics</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="setFlow">
+                  </a> <!-- setFlow -->
+                  <span class="method-name">setFlow</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.Expressage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="expressage">
+                  </a> <!-- expressage -->
+                  <span class="method-name">expressage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.BearPaw</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="aclass">
+                  </a> <!-- aclass -->
+                  <span class="method-name">aclass</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.Update</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="update">
+                  </a> <!-- update -->
+                  <span class="method-name">update</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.AddBlacklist</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addblist">
+                  </a> <!-- addblist -->
+                  <span class="method-name">addblist</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.Credit</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="credit">
+                  </a> <!-- credit -->
+                  <span class="method-name">credit</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.Blog</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="blog">
+                  </a> <!-- blog -->
+                  <span class="method-name">blog</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.AddStyle</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addStyle">
+                  </a> <!-- addStyle -->
+                  <span class="method-name">addStyle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.FriendlyLink</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="aclass">
+                  </a> <!-- aclass -->
+                  <span class="method-name">aclass</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.SetAddressType</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="setAddtype">
+                  </a> <!-- setAddtype -->
+                  <span class="method-name">setAddtype</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.Language</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="language">
+                  </a> <!-- language -->
+                  <span class="method-name">language</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.add_Single1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="single">
+                  </a> <!-- single -->
+                  <span class="method-name">single</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.FlowStatistics</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="flow">
+                  </a> <!-- flow -->
+                  <span class="method-name">flow</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.Front_Resigh_Cz</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="frontresighter">
+                  </a> <!-- frontresighter -->
+                  <span class="method-name">frontresighter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.SetDesignList</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="setDesignList">
+                  </a> <!-- setDesignList -->
+                  <span class="method-name">setDesignList</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.MemberBonusPoints</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="member">
+                  </a> <!-- member -->
+                  <span class="method-name">member</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.Admin_Login_Cz</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="adminlogin(yinlu, 123456)">
+                  </a> <!-- adminlogin(yinlu, 123456) -->
+                  <span class="method-name">adminlogin</span>
+                  <span class="parameters">(yinlu, 123456)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.BlogClass</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="aclass">
+                  </a> <!-- aclass -->
+                  <span class="method-name">aclass</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.SetDesignThumbnail</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="setDesignThumbmail">
+                  </a> <!-- setDesignThumbmail -->
+                  <span class="method-name">setDesignThumbmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.PlateManage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="plate">
+                  </a> <!-- plate -->
+                  <span class="method-name">plate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.BatchSubmission</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="member">
+                  </a> <!-- member -->
+                  <span class="method-name">member</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.Yuming</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="yuming">
+                  </a> <!-- yuming -->
+                  <span class="method-name">yuming</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.HandBook</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="handbook">
+                  </a> <!-- handbook -->
+                  <span class="method-name">handbook</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.SetSecurity</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="setSecurity">
+                  </a> <!-- setSecurity -->
+                  <span class="method-name">setSecurity</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.AddWhitelist</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addWlist">
+                  </a> <!-- addWlist -->
+                  <span class="method-name">addWlist</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.AddContent</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="aclass">
+                  </a> <!-- aclass -->
+                  <span class="method-name">aclass</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.Send</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="send">
+                  </a> <!-- send -->
+                  <span class="method-name">send</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.SetAdministrator</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="setAdmin">
+                  </a> <!-- setAdmin -->
+                  <span class="method-name">setAdmin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.SiteSetting</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="site">
+                  </a> <!-- site -->
+                  <span class="method-name">site</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+          <div class="suite-s1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.AddCompanyAddress</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addAddress">
+                  </a> <!-- addAddress -->
+                  <span class="method-name">addAddress</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-s1-class-passed -->
+        </div> <!-- panel s1 -->
+        <div panel-name="test-xml-s1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\demo\ChanZhi\ChanZhi\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;s1&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;test1&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.webtest.demo.Admin_Login_Cz&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.Blog&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.add_Essay1&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.add_Single1&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.AddCompanyMessage&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.AddCompanyAddress&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.AddContent&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.AddCss&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.AddJs&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.MaintainClass&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.AddScoreRule&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.AddStyle&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.AddWhitelist&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.AriticalClass&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.Backups&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.BatchSubmission&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.BearPaw&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.BlogClass&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.CDN&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.Credit&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.FlowStatistics&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.FriendlyLink&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.Groups&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.HandBook&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.KeyWords&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.Language&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.MemberBonusPoints&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.PlateManage&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.Product&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.Registration&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.Send&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.SetAddressType&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.SetAdministrator&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.SetCache&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.SetDesignList&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.SetDesignThumbnail&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.SetDomainName&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.SetFlowStatistics&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.SetSecurity&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.SiteSetting&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.Update&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.Yuming&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.AddBlacklist&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.AddSecuritycode&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.SetDesignList&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.AddFilesupload&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.AddSetting&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.Expressage&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.Openlogin&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.Front_Login_Cz&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.Front_Resigh_Cz&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- test1 --&gt;
+&lt;/suite&gt; &lt;!-- s1 --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-s1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for s1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">test1 (51 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-s1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for s1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-s1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for s1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_s1');
+function tableData_s1() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(50);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'setSecurity')
+data.setCell(0, 2, 'com.webtest.demo.SetSecurity')
+data.setCell(0, 3, 43989);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'aclass')
+data.setCell(1, 2, 'com.webtest.demo.AddContent')
+data.setCell(1, 3, 34782);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'handbook')
+data.setCell(2, 2, 'com.webtest.demo.HandBook')
+data.setCell(2, 3, 33976);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'addessay')
+data.setCell(3, 2, 'com.webtest.demo.add_Essay1')
+data.setCell(3, 3, 32672);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'product')
+data.setCell(4, 2, 'com.webtest.demo.Product')
+data.setCell(4, 3, 29959);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'addMessage')
+data.setCell(5, 2, 'com.webtest.demo.AddCompanyMessage')
+data.setCell(5, 3, 28130);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'blog')
+data.setCell(6, 2, 'com.webtest.demo.Blog')
+data.setCell(6, 3, 27841);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'aclass')
+data.setCell(7, 2, 'com.webtest.demo.FriendlyLink')
+data.setCell(7, 3, 25387);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'plate')
+data.setCell(8, 2, 'com.webtest.demo.PlateManage')
+data.setCell(8, 3, 25339);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'language')
+data.setCell(9, 2, 'com.webtest.demo.Language')
+data.setCell(9, 3, 24959);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'setDesignList')
+data.setCell(10, 2, 'com.webtest.demo.SetDesignList')
+data.setCell(10, 3, 23967);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'addblist')
+data.setCell(11, 2, 'com.webtest.demo.AddBlacklist')
+data.setCell(11, 3, 23146);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'openlogin')
+data.setCell(12, 2, 'com.webtest.demo.Openlogin')
+data.setCell(12, 3, 22553);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'site')
+data.setCell(13, 2, 'com.webtest.demo.SiteSetting')
+data.setCell(13, 3, 22550);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'group')
+data.setCell(14, 2, 'com.webtest.demo.Groups')
+data.setCell(14, 3, 22384);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'send')
+data.setCell(15, 2, 'com.webtest.demo.Send')
+data.setCell(15, 3, 22013);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'aclass')
+data.setCell(16, 2, 'com.webtest.demo.BearPaw')
+data.setCell(16, 3, 20312);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'single')
+data.setCell(17, 2, 'com.webtest.demo.add_Single1')
+data.setCell(17, 3, 20061);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'backups')
+data.setCell(18, 2, 'com.webtest.demo.Backups')
+data.setCell(18, 3, 19196);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'aclass')
+data.setCell(19, 2, 'com.webtest.demo.BlogClass')
+data.setCell(19, 3, 18963);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'registration')
+data.setCell(20, 2, 'com.webtest.demo.Registration')
+data.setCell(20, 3, 18743);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'setAdmin')
+data.setCell(21, 2, 'com.webtest.demo.SetAdministrator')
+data.setCell(21, 3, 18682);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'addStyle')
+data.setCell(22, 2, 'com.webtest.demo.AddStyle')
+data.setCell(22, 3, 18623);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'addCss')
+data.setCell(23, 2, 'com.webtest.demo.AddCss')
+data.setCell(23, 3, 18598);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'yuming')
+data.setCell(24, 2, 'com.webtest.demo.Yuming')
+data.setCell(24, 3, 18574);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'cdn')
+data.setCell(25, 2, 'com.webtest.demo.CDN')
+data.setCell(25, 3, 18526);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'addJs')
+data.setCell(26, 2, 'com.webtest.demo.AddJs')
+data.setCell(26, 3, 18441);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'setCache')
+data.setCell(27, 2, 'com.webtest.demo.SetCache')
+data.setCell(27, 3, 17796);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'addAddress')
+data.setCell(28, 2, 'com.webtest.demo.AddCompanyAddress')
+data.setCell(28, 3, 17430);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'credit')
+data.setCell(29, 2, 'com.webtest.demo.Credit')
+data.setCell(29, 3, 17064);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'member')
+data.setCell(30, 2, 'com.webtest.demo.BatchSubmission')
+data.setCell(30, 3, 16896);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'addfupload')
+data.setCell(31, 2, 'com.webtest.demo.AddFilesupload')
+data.setCell(31, 3, 16189);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'addset')
+data.setCell(32, 2, 'com.webtest.demo.AddSetting')
+data.setCell(32, 3, 15754);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'aclass')
+data.setCell(33, 2, 'com.webtest.demo.AriticalClass')
+data.setCell(33, 3, 15374);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'flow')
+data.setCell(34, 2, 'com.webtest.demo.FlowStatistics')
+data.setCell(34, 3, 15339);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'update')
+data.setCell(35, 2, 'com.webtest.demo.Update')
+data.setCell(35, 3, 15230);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'setDesignThumbmail')
+data.setCell(36, 2, 'com.webtest.demo.SetDesignThumbnail')
+data.setCell(36, 3, 14817);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'member')
+data.setCell(37, 2, 'com.webtest.demo.MemberBonusPoints')
+data.setCell(37, 3, 14758);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'expressage')
+data.setCell(38, 2, 'com.webtest.demo.Expressage')
+data.setCell(38, 3, 14666);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'setAddtype')
+data.setCell(39, 2, 'com.webtest.demo.SetAddressType')
+data.setCell(39, 3, 14615);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'adminlogin')
+data.setCell(40, 2, 'com.webtest.demo.Admin_Login_Cz')
+data.setCell(40, 3, 13535);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'setFlow')
+data.setCell(41, 2, 'com.webtest.demo.SetFlowStatistics')
+data.setCell(41, 3, 11308);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'addscode')
+data.setCell(42, 2, 'com.webtest.demo.AddSecuritycode')
+data.setCell(42, 3, 11207);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'addRule')
+data.setCell(43, 2, 'com.webtest.demo.AddScoreRule')
+data.setCell(43, 3, 9694);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'keywords')
+data.setCell(44, 2, 'com.webtest.demo.KeyWords')
+data.setCell(44, 3, 8588);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'setDomainname')
+data.setCell(45, 2, 'com.webtest.demo.SetDomainName')
+data.setCell(45, 3, 7777);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'addWlist')
+data.setCell(46, 2, 'com.webtest.demo.AddWhitelist')
+data.setCell(46, 3, 4278);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'frontresighter')
+data.setCell(47, 2, 'com.webtest.demo.Front_Resigh_Cz')
+data.setCell(47, 3, 3231);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'frontlogin')
+data.setCell(48, 2, 'com.webtest.demo.Front_Login_Cz')
+data.setCell(48, 3, 2348);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'maintanClass')
+data.setCell(49, 2, 'com.webtest.demo.MaintainClass')
+data.setCell(49, 3, 1026);
+window.suiteTableData['s1']= { tableData: data, tableDiv: 'times-div-s1'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 15 minutes</span>
+              <div id="times-div-s1">
+              </div> <!-- times-div-s1 -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-s1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for s1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">addAddress</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">设置联系方式</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">addRule</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">修改积分规则</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-s1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">98 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.AddCss</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.add_Essay1</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.Registration</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.Front_Login_Cz</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.AriticalClass</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.AddSecuritycode</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.SetDomainName</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.AddFilesupload</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.CDN</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.Groups</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.SetCache</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.Backups</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.AddSetting</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.AddCompanyMessage</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.Product</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.AddJs</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.AddScoreRule</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.KeyWords</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.SetFlowStatistics</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.Expressage</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.BearPaw</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.Update</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.Openlogin</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.AddBlacklist</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.Blog</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.Credit</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.AddStyle</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.FriendlyLink</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.SetAddressType</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.Language</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.add_Single1</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.Front_Resigh_Cz</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.FlowStatistics</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.SetDesignList</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.MemberBonusPoints</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.MaintainClass</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.BlogClass</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.SetDesignThumbnail</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.PlateManage</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.BatchSubmission</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.Yuming</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.HandBook</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.SetSecurity</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.AddWhitelist</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.AddContent</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.Send</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.SiteSetting</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.SetAdministrator</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.webtest.demo.AddCompanyAddress</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doBeforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">doAfterMethod</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-s1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.Admin_Login_Cz</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">doBeforeSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="test-method">
+                <span class="method-name">adminlogin(yinlu, 123456)</span>
+                <span class="method-start">50856 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.Blog</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">blog</span>
+                <span class="method-start">64393 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.add_Essay1</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addessay</span>
+                <span class="method-start">92236 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.add_Single1</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">single</span>
+                <span class="method-start">124910 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.AddCompanyMessage</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addMessage</span>
+                <span class="method-start">144972 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.AddCompanyAddress</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addAddress</span>
+                <span class="method-start">173103 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.AddContent</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">aclass</span>
+                <span class="method-start">190534 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.AddCss</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addCss</span>
+                <span class="method-start">225317 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.AddJs</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addJs</span>
+                <span class="method-start">243916 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.MaintainClass</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">maintanClass</span>
+                <span class="method-start">262358 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.AddScoreRule</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addRule</span>
+                <span class="method-start">263431 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.AddStyle</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addStyle</span>
+                <span class="method-start">273127 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.AddWhitelist</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addWlist</span>
+                <span class="method-start">291751 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.AriticalClass</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">aclass</span>
+                <span class="method-start">296030 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.Backups</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">backups</span>
+                <span class="method-start">311405 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.BatchSubmission</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">member</span>
+                <span class="method-start">330602 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.BearPaw</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">aclass</span>
+                <span class="method-start">347499 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.BlogClass</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">aclass</span>
+                <span class="method-start">367812 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.CDN</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">cdn</span>
+                <span class="method-start">386775 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.Credit</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">credit</span>
+                <span class="method-start">405302 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.FlowStatistics</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">flow</span>
+                <span class="method-start">422367 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.FriendlyLink</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">aclass</span>
+                <span class="method-start">437708 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.Groups</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">group</span>
+                <span class="method-start">463096 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.HandBook</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">handbook</span>
+                <span class="method-start">485481 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.KeyWords</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">keywords</span>
+                <span class="method-start">519457 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.Language</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">language</span>
+                <span class="method-start">528046 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.MemberBonusPoints</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">member</span>
+                <span class="method-start">553007 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.PlateManage</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">plate</span>
+                <span class="method-start">567765 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.Product</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">product</span>
+                <span class="method-start">593105 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.Registration</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">registration</span>
+                <span class="method-start">623065 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.Send</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">send</span>
+                <span class="method-start">641809 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.SetAddressType</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">setAddtype</span>
+                <span class="method-start">663823 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.SetAdministrator</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">setAdmin</span>
+                <span class="method-start">678438 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.SetCache</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">setCache</span>
+                <span class="method-start">697122 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.SetDesignList</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">setDesignList</span>
+                <span class="method-start">714919 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.SetDesignThumbnail</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">setDesignThumbmail</span>
+                <span class="method-start">738887 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.SetDomainName</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">setDomainname</span>
+                <span class="method-start">753705 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.SetFlowStatistics</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">setFlow</span>
+                <span class="method-start">761483 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.SetSecurity</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">setSecurity</span>
+                <span class="method-start">772792 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.SiteSetting</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">site</span>
+                <span class="method-start">816782 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.Update</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">update</span>
+                <span class="method-start">839333 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.Yuming</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">yuming</span>
+                <span class="method-start">854564 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.AddBlacklist</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addblist</span>
+                <span class="method-start">873139 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.AddSecuritycode</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addscode</span>
+                <span class="method-start">896286 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.AddFilesupload</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addfupload</span>
+                <span class="method-start">907494 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.AddSetting</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addset</span>
+                <span class="method-start">923684 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.Expressage</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">expressage</span>
+                <span class="method-start">939439 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.Openlogin</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">openlogin</span>
+                <span class="method-start">954105 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.Front_Login_Cz</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">frontlogin</span>
+                <span class="method-start">976660 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.Front_Resigh_Cz</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">frontresighter</span>
+                <span class="method-start">979019 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.Admin_Login_Cz</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">982429 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
