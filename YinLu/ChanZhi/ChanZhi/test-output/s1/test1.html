@@ -1,0 +1,477 @@
+<html>
+<head>
+<title>TestNG:  test1</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>test1</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>48/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Dec 05 16:04:55 CST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>934 seconds (934842 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.webtest.demo.MaintainClass.maintanClass()'><b>maintanClass</b><br>Test class: com.webtest.demo.MaintainClass</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: 
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
+System info: host: &apos;DESKTOP-BCVV7R2&apos;, ip: &apos;169.254.216.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;9.0.4&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\ASUS\AppData\Local\Temp\rust_mozprofile.1N4HzeUfDczT, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=56.0, platformVersion=10.0, moz:processID=9232, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: 67c18029-7125-4eeb-b7ce-49ea5465fa35
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.webtest.core.WebDriverEngine.click(WebDriverEngine.java:141)
+	at com.webtest.demo.MaintainClass.maintanClass(MaintainClass.java:13)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1395725953", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1395725953'><pre>org.openqa.selenium.ElementNotInteractableException: 
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
+System info: host: &apos;DESKTOP-BCVV7R2&apos;, ip: &apos;169.254.216.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;9.0.4&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\ASUS\AppData\Local\Temp\rust_mozprofile.1N4HzeUfDczT, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=56.0, platformVersion=10.0, moz:processID=9232, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: 67c18029-7125-4eeb-b7ce-49ea5465fa35
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.webtest.core.WebDriverEngine.click(WebDriverEngine.java:141)
+	at com.webtest.demo.MaintainClass.maintanClass(MaintainClass.java:13)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>com.webtest.demo.MaintainClass@576d5deb</td></tr>
+<tr>
+<td title='com.webtest.demo.Openlogin.openlogin()'><b>openlogin</b><br>Test class: com.webtest.demo.Openlogin</td>
+<td><div><pre>org.openqa.selenium.NoAlertPresentException: No modal dialog is currently open
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
+System info: host: &apos;DESKTOP-BCVV7R2&apos;, ip: &apos;169.254.216.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;9.0.4&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\ASUS\AppData\Local\Temp\rust_mozprofile.1N4HzeUfDczT, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=56.0, platformVersion=10.0, moz:processID=9232, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: 67c18029-7125-4eeb-b7ce-49ea5465fa35
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:643)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:972)
+	at com.webtest.core.WebDriverEngine.getAlert(WebDriverEngine.java:211)
+	at com.webtest.core.WebDriverEngine.alertAccept(WebDriverEngine.java:240)
+	at com.webtest.demo.Openlogin.openlogin(Openlogin.java:64)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace108333023", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace108333023'><pre>org.openqa.selenium.NoAlertPresentException: No modal dialog is currently open
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T16:15:40.131Z&apos;
+System info: host: &apos;DESKTOP-BCVV7R2&apos;, ip: &apos;169.254.216.16&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;9.0.4&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\ASUS\AppData\Local\Temp\rust_mozprofile.1N4HzeUfDczT, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=56.0, platformVersion=10.0, moz:processID=9232, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: 67c18029-7125-4eeb-b7ce-49ea5465fa35
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:643)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:972)
+	at com.webtest.core.WebDriverEngine.getAlert(WebDriverEngine.java:211)
+	at com.webtest.core.WebDriverEngine.alertAccept(WebDriverEngine.java:240)
+	at com.webtest.demo.Openlogin.openlogin(Openlogin.java:64)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>22</td>
+<td>com.webtest.demo.Openlogin@60099951</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.webtest.demo.AddContent.aclass()'><b>aclass</b><br>Test class: com.webtest.demo.AddContent</td>
+<td></td>
+<td>34</td>
+<td>com.webtest.demo.AddContent@121314f7</td></tr>
+<tr>
+<td title='com.webtest.demo.AriticalClass.aclass()'><b>aclass</b><br>Test class: com.webtest.demo.AriticalClass</td>
+<td></td>
+<td>15</td>
+<td>com.webtest.demo.AriticalClass@4d5650ae</td></tr>
+<tr>
+<td title='com.webtest.demo.BearPaw.aclass()'><b>aclass</b><br>Test class: com.webtest.demo.BearPaw</td>
+<td></td>
+<td>20</td>
+<td>com.webtest.demo.BearPaw@51c668e3</td></tr>
+<tr>
+<td title='com.webtest.demo.BlogClass.aclass()'><b>aclass</b><br>Test class: com.webtest.demo.BlogClass</td>
+<td></td>
+<td>18</td>
+<td>com.webtest.demo.BlogClass@2e6a8155</td></tr>
+<tr>
+<td title='com.webtest.demo.FriendlyLink.aclass()'><b>aclass</b><br>Test class: com.webtest.demo.FriendlyLink</td>
+<td></td>
+<td>25</td>
+<td>com.webtest.demo.FriendlyLink@4a883b15</td></tr>
+<tr>
+<td title='com.webtest.demo.AddCompanyAddress.addAddress()'><b>addAddress</b><br>Test class: com.webtest.demo.AddCompanyAddress<br/>
+<a href="#Output-77163673" onClick='toggleBox("Output-77163673", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-77163673" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-77163673">
+设置联系方式<br/>
+</div>
+</td>
+<td></td>
+<td>17</td>
+<td>com.webtest.demo.AddCompanyAddress@60bd273d</td></tr>
+<tr>
+<td title='com.webtest.demo.AddCss.addCss()'><b>addCss</b><br>Test class: com.webtest.demo.AddCss</td>
+<td></td>
+<td>18</td>
+<td>com.webtest.demo.AddCss@130c12b7</td></tr>
+<tr>
+<td title='com.webtest.demo.AddJs.addJs()'><b>addJs</b><br>Test class: com.webtest.demo.AddJs</td>
+<td></td>
+<td>18</td>
+<td>com.webtest.demo.AddJs@5e600dd5</td></tr>
+<tr>
+<td title='com.webtest.demo.AddCompanyMessage.addMessage()'><b>addMessage</b><br>Test class: com.webtest.demo.AddCompanyMessage</td>
+<td></td>
+<td>28</td>
+<td>com.webtest.demo.AddCompanyMessage@4f80542f</td></tr>
+<tr>
+<td title='com.webtest.demo.AddScoreRule.addRule()'><b>addRule</b><br>Test class: com.webtest.demo.AddScoreRule<br/>
+<a href="#Output-759099777" onClick='toggleBox("Output-759099777", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-759099777" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-759099777">
+修改积分规则<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>com.webtest.demo.AddScoreRule@5d534f5d</td></tr>
+<tr>
+<td title='com.webtest.demo.AddStyle.addStyle()'><b>addStyle</b><br>Test class: com.webtest.demo.AddStyle</td>
+<td></td>
+<td>18</td>
+<td>com.webtest.demo.AddStyle@2e3967ea</td></tr>
+<tr>
+<td title='com.webtest.demo.AddWhitelist.addWlist()'><b>addWlist</b><br>Test class: com.webtest.demo.AddWhitelist</td>
+<td></td>
+<td>4</td>
+<td>com.webtest.demo.AddWhitelist@70e9c95d</td></tr>
+<tr>
+<td title='com.webtest.demo.AddBlacklist.addblist()'><b>addblist</b><br>Test class: com.webtest.demo.AddBlacklist</td>
+<td></td>
+<td>23</td>
+<td>com.webtest.demo.AddBlacklist@13e344d</td></tr>
+<tr>
+<td title='com.webtest.demo.add_Essay1.addessay()'><b>addessay</b><br>Test class: com.webtest.demo.add_Essay1</td>
+<td></td>
+<td>32</td>
+<td>com.webtest.demo.add_Essay1@5a45133e</td></tr>
+<tr>
+<td title='com.webtest.demo.AddFilesupload.addfupload()'><b>addfupload</b><br>Test class: com.webtest.demo.AddFilesupload</td>
+<td></td>
+<td>16</td>
+<td>com.webtest.demo.AddFilesupload@6574a52c</td></tr>
+<tr>
+<td title='com.webtest.demo.AddSecuritycode.addscode()'><b>addscode</b><br>Test class: com.webtest.demo.AddSecuritycode</td>
+<td></td>
+<td>11</td>
+<td>com.webtest.demo.AddSecuritycode@1ffaf86</td></tr>
+<tr>
+<td title='com.webtest.demo.AddSetting.addset()'><b>addset</b><br>Test class: com.webtest.demo.AddSetting</td>
+<td></td>
+<td>15</td>
+<td>com.webtest.demo.AddSetting@6c1a5b54</td></tr>
+<tr>
+<td title='com.webtest.demo.Admin_Login_Cz.adminlogin()'><b>adminlogin</b><br>Test class: com.webtest.demo.Admin_Login_Cz<br>Parameters: yinlu, 123456</td>
+<td></td>
+<td>13</td>
+<td>com.webtest.demo.Admin_Login_Cz@942a29c</td></tr>
+<tr>
+<td title='com.webtest.demo.Backups.backups()'><b>backups</b><br>Test class: com.webtest.demo.Backups</td>
+<td></td>
+<td>19</td>
+<td>com.webtest.demo.Backups@a38c7fe</td></tr>
+<tr>
+<td title='com.webtest.demo.Blog.blog()'><b>blog</b><br>Test class: com.webtest.demo.Blog</td>
+<td></td>
+<td>27</td>
+<td>com.webtest.demo.Blog@1ed6388a</td></tr>
+<tr>
+<td title='com.webtest.demo.CDN.cdn()'><b>cdn</b><br>Test class: com.webtest.demo.CDN</td>
+<td></td>
+<td>18</td>
+<td>com.webtest.demo.CDN@6221a451</td></tr>
+<tr>
+<td title='com.webtest.demo.Credit.credit()'><b>credit</b><br>Test class: com.webtest.demo.Credit</td>
+<td></td>
+<td>17</td>
+<td>com.webtest.demo.Credit@52719fb6</td></tr>
+<tr>
+<td title='com.webtest.demo.Expressage.expressage()'><b>expressage</b><br>Test class: com.webtest.demo.Expressage</td>
+<td></td>
+<td>14</td>
+<td>com.webtest.demo.Expressage@1c7696c6</td></tr>
+<tr>
+<td title='com.webtest.demo.FlowStatistics.flow()'><b>flow</b><br>Test class: com.webtest.demo.FlowStatistics</td>
+<td></td>
+<td>15</td>
+<td>com.webtest.demo.FlowStatistics@3012646b</td></tr>
+<tr>
+<td title='com.webtest.demo.Front_Login_Cz.frontlogin()'><b>frontlogin</b><br>Test class: com.webtest.demo.Front_Login_Cz</td>
+<td></td>
+<td>2</td>
+<td>com.webtest.demo.Front_Login_Cz@20140db9</td></tr>
+<tr>
+<td title='com.webtest.demo.Front_Resigh_Cz.frontresighter()'><b>frontresighter</b><br>Test class: com.webtest.demo.Front_Resigh_Cz</td>
+<td></td>
+<td>3</td>
+<td>com.webtest.demo.Front_Resigh_Cz@1e6a3214</td></tr>
+<tr>
+<td title='com.webtest.demo.Groups.group()'><b>group</b><br>Test class: com.webtest.demo.Groups</td>
+<td></td>
+<td>22</td>
+<td>com.webtest.demo.Groups@25641d39</td></tr>
+<tr>
+<td title='com.webtest.demo.HandBook.handbook()'><b>handbook</b><br>Test class: com.webtest.demo.HandBook</td>
+<td></td>
+<td>33</td>
+<td>com.webtest.demo.HandBook@7b36aa0c</td></tr>
+<tr>
+<td title='com.webtest.demo.KeyWords.keywords()'><b>keywords</b><br>Test class: com.webtest.demo.KeyWords</td>
+<td></td>
+<td>8</td>
+<td>com.webtest.demo.KeyWords@5824a83d</td></tr>
+<tr>
+<td title='com.webtest.demo.Language.language()'><b>language</b><br>Test class: com.webtest.demo.Language</td>
+<td></td>
+<td>24</td>
+<td>com.webtest.demo.Language@537f60bf</td></tr>
+<tr>
+<td title='com.webtest.demo.BatchSubmission.member()'><b>member</b><br>Test class: com.webtest.demo.BatchSubmission</td>
+<td></td>
+<td>16</td>
+<td>com.webtest.demo.BatchSubmission@6fdbe764</td></tr>
+<tr>
+<td title='com.webtest.demo.MemberBonusPoints.member()'><b>member</b><br>Test class: com.webtest.demo.MemberBonusPoints</td>
+<td></td>
+<td>14</td>
+<td>com.webtest.demo.MemberBonusPoints@5677323c</td></tr>
+<tr>
+<td title='com.webtest.demo.PlateManage.plate()'><b>plate</b><br>Test class: com.webtest.demo.PlateManage</td>
+<td></td>
+<td>25</td>
+<td>com.webtest.demo.PlateManage@18df8434</td></tr>
+<tr>
+<td title='com.webtest.demo.Product.product()'><b>product</b><br>Test class: com.webtest.demo.Product</td>
+<td></td>
+<td>29</td>
+<td>com.webtest.demo.Product@65c7a252</td></tr>
+<tr>
+<td title='com.webtest.demo.Registration.registration()'><b>registration</b><br>Test class: com.webtest.demo.Registration</td>
+<td></td>
+<td>18</td>
+<td>com.webtest.demo.Registration@4d154ccd</td></tr>
+<tr>
+<td title='com.webtest.demo.Send.send()'><b>send</b><br>Test class: com.webtest.demo.Send</td>
+<td></td>
+<td>22</td>
+<td>com.webtest.demo.Send@229c6181</td></tr>
+<tr>
+<td title='com.webtest.demo.SetAddressType.setAddtype()'><b>setAddtype</b><br>Test class: com.webtest.demo.SetAddressType</td>
+<td></td>
+<td>14</td>
+<td>com.webtest.demo.SetAddressType@4686afc2</td></tr>
+<tr>
+<td title='com.webtest.demo.SetAdministrator.setAdmin()'><b>setAdmin</b><br>Test class: com.webtest.demo.SetAdministrator</td>
+<td></td>
+<td>18</td>
+<td>com.webtest.demo.SetAdministrator@1e0b4072</td></tr>
+<tr>
+<td title='com.webtest.demo.SetCache.setCache()'><b>setCache</b><br>Test class: com.webtest.demo.SetCache</td>
+<td></td>
+<td>17</td>
+<td>com.webtest.demo.SetCache@791f145a</td></tr>
+<tr>
+<td title='com.webtest.demo.SetDesignList.setDesignList()'><b>setDesignList</b><br>Test class: com.webtest.demo.SetDesignList</td>
+<td></td>
+<td>23</td>
+<td>com.webtest.demo.SetDesignList@38cee291</td></tr>
+<tr>
+<td title='com.webtest.demo.SetDesignThumbnail.setDesignThumbmail()'><b>setDesignThumbmail</b><br>Test class: com.webtest.demo.SetDesignThumbnail</td>
+<td></td>
+<td>14</td>
+<td>com.webtest.demo.SetDesignThumbnail@4b45a2f5</td></tr>
+<tr>
+<td title='com.webtest.demo.SetDomainName.setDomainname()'><b>setDomainname</b><br>Test class: com.webtest.demo.SetDomainName</td>
+<td></td>
+<td>7</td>
+<td>com.webtest.demo.SetDomainName@f09733f</td></tr>
+<tr>
+<td title='com.webtest.demo.SetFlowStatistics.setFlow()'><b>setFlow</b><br>Test class: com.webtest.demo.SetFlowStatistics</td>
+<td></td>
+<td>11</td>
+<td>com.webtest.demo.SetFlowStatistics@e350b40</td></tr>
+<tr>
+<td title='com.webtest.demo.SetSecurity.setSecurity()'><b>setSecurity</b><br>Test class: com.webtest.demo.SetSecurity</td>
+<td></td>
+<td>43</td>
+<td>com.webtest.demo.SetSecurity@41a0aa7d</td></tr>
+<tr>
+<td title='com.webtest.demo.add_Single1.single()'><b>single</b><br>Test class: com.webtest.demo.add_Single1</td>
+<td></td>
+<td>20</td>
+<td>com.webtest.demo.add_Single1@534a5a98</td></tr>
+<tr>
+<td title='com.webtest.demo.SiteSetting.site()'><b>site</b><br>Test class: com.webtest.demo.SiteSetting</td>
+<td></td>
+<td>22</td>
+<td>com.webtest.demo.SiteSetting@2794eab6</td></tr>
+<tr>
+<td title='com.webtest.demo.Update.update()'><b>update</b><br>Test class: com.webtest.demo.Update</td>
+<td></td>
+<td>15</td>
+<td>com.webtest.demo.Update@6340e5f0</td></tr>
+<tr>
+<td title='com.webtest.demo.Yuming.yuming()'><b>yuming</b><br>Test class: com.webtest.demo.Yuming</td>
+<td></td>
+<td>18</td>
+<td>com.webtest.demo.Yuming@45099dd3</td></tr>
+</table><p>
+</body>
+</html>

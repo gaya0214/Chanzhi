@@ -1,0 +1,70 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="s1" verbose="1" >
+
+	<test name="test1">
+		<classes>
+			<class name="com.webtest.demo.Admin_Login_Cz">	</class>
+			<class name="com.webtest.demo.Blog"></class>
+			<class name="com.webtest.demo.add_Essay1"></class>
+			<class name="com.webtest.demo.add_Single1"></class>
+			<class name="com.webtest.demo.AddCompanyMessage"></class>
+			<class name="com.webtest.demo.AddCompanyAddress"></class>
+			<class name="com.webtest.demo.AddContent"></class>
+			<class name="com.webtest.demo.AddCss"></class>
+			<class name="com.webtest.demo.AddJs"></class>
+			<class name="com.webtest.demo.MaintainClass"></class>
+			
+			<class name="com.webtest.demo.AddScoreRule"></class>			
+			<class name="com.webtest.demo.AddStyle"></class>
+			<class name="com.webtest.demo.AddWhitelist"></class>
+			<class name="com.webtest.demo.AriticalClass"></class>
+			<class name="com.webtest.demo.Backups"></class>
+			<class name="com.webtest.demo.BatchSubmission"></class>
+			<class name="com.webtest.demo.BearPaw"></class>		
+			<class name="com.webtest.demo.BlogClass"></class>	
+			<class name="com.webtest.demo.CDN"></class>
+			<class name="com.webtest.demo.Credit"></class>
+			
+			<class name="com.webtest.demo.FlowStatistics"></class>
+			<class name="com.webtest.demo.FriendlyLink"></class>		
+			
+			<class name="com.webtest.demo.Groups"></class>
+			<class name="com.webtest.demo.HandBook"></class>
+			<class name="com.webtest.demo.KeyWords"></class>		
+			<class name="com.webtest.demo.Language"></class>
+			<class name="com.webtest.demo.MemberBonusPoints"></class>			
+
+			
+			<class name="com.webtest.demo.PlateManage"></class>			
+			<class name="com.webtest.demo.Product"></class>
+			<class name="com.webtest.demo.Registration"></class>
+			<class name="com.webtest.demo.Send"></class>			
+			<class name="com.webtest.demo.SetAddressType"></class>
+			<class name="com.webtest.demo.SetAdministrator"></class>
+			<class name="com.webtest.demo.SetCache"></class>
+			<class name="com.webtest.demo.SetDesignList"></class>		
+			<class name="com.webtest.demo.SetDesignThumbnail"></class>
+			<class name="com.webtest.demo.SetDomainName"></class>
+			
+			<class name="com.webtest.demo.SetFlowStatistics"></class>
+			<class name="com.webtest.demo.SetSecurity"></class>
+			<class name="com.webtest.demo.SiteSetting"></class>
+			<class name="com.webtest.demo.Update"></class>
+			<class name="com.webtest.demo.Yuming"></class>
+			<class name="com.webtest.demo.AddBlacklist"></class>
+			<class name="com.webtest.demo.AddSecuritycode"></class>
+			<class name="com.webtest.demo.SetDesignList"></class>
+			<class name="com.webtest.demo.AddFilesupload"></class>
+			<class name="com.webtest.demo.AddSetting"></class>
+			
+			<class name="com.webtest.demo.Expressage"></class>
+			
+			<class name="com.webtest.demo.Openlogin"></class>
+			<class name="com.webtest.demo.Front_Login_Cz"></class>
+			<class name="com.webtest.demo.Front_Resigh_Cz"></class>
+			
+		</classes>	
+	</test>
+	
+</suite>
