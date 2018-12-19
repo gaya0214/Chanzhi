@@ -3,7 +3,8 @@ package com.webtest.demo;
 import org.testng.annotations.Test;
 
 import com.webtest.core.BaseTest;
-/*41.���õ�ַ���ͣ�����-��ַ���ͣ�*/
+/*作者：刘海新
+ * 41.设置地址类型（设置-地址类型）*/
 public class Set_AddressType extends BaseTest{
 	int i=0; 
 	@Test

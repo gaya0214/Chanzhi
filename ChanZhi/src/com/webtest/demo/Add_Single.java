@@ -3,7 +3,8 @@ package com.webtest.demo;
 import org.testng.annotations.Test;
 
 import com.webtest.core.BaseTest;
-/*4.添加单页*/
+/*作者：黄瑾然
+ * 4.添加单页*/
 public class Add_Single extends BaseTest{
 	@Test
 	

@@ -4,7 +4,8 @@ import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 import com.webtest.core.*;
 import com.webtest.demo.*;
-/*20.维护类目（内容-文章）*/
+/*作者：尹璐
+ * 20.维护类目（内容-文章）*/
 public class Maintenance_Category_Essay extends BaseTest{
 	@Test
 	public void maintenancecategoryEssay()throws Exception{

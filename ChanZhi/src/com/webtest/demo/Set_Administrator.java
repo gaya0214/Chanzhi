@@ -3,7 +3,8 @@ package com.webtest.demo;
 import org.testng.annotations.Test;
 
 import com.webtest.core.BaseTest;
-
+/*作者：刘琪
+ * 42.设计管理员权限（设置-安全-分组权限-编辑）*/
 public class Set_Administrator extends BaseTest{
 	@Test
 	 public void setAdmin() throws Exception {

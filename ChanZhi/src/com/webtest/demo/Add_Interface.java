@@ -3,7 +3,8 @@ import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 import com.webtest.core.*;
 import com.webtest.demo.*;
-/*13.发信设置（站点-语言设置-接口）*/
+/*作者：刘琪
+ * 13.发信设置（站点-语言设置-接口）*/
 public class Add_Interface extends BaseTest {
 	@Test
 	public void addInterface() throws Exception{

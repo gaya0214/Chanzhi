@@ -3,7 +3,8 @@ import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 import com.webtest.core.*;
 import com.webtest.demo.*;
-/*12.添加开放登录（站点-语言设置-接口）*/
+/*作者：刘琪
+ * 12.添加开放登录（站点-语言设置-接口）*/
 public class Add_Mailbox extends BaseTest{
 	@Test
 	public void addMailbox() throws Exception{

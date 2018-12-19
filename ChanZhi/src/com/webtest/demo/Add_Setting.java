@@ -3,7 +3,8 @@ package com.webtest.demo;
 import org.testng.annotations.Test;
 
 import com.webtest.core.BaseTest;
-/*22.添加设置（内容-手册）*/
+/*作者：杨斯媛
+ * 22.添加设置（内容-手册）*/
 public class Add_Setting extends BaseTest{
 	int n=0;
     @Test

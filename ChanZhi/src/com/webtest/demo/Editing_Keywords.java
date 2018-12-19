@@ -3,7 +3,8 @@ import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 import com.webtest.core.*;
 import com.webtest.demo.*;
-/*46.编辑关键词（推广-关键词-编辑链接）（前提是有关键词）*/
+/*作者：韦宇杰
+ * 46.编辑关键词（推广-关键词-编辑链接）（前提是有关键词）*/
 public class Editing_Keywords extends BaseTest{
 	@Test
 	public void editingKeywords() throws Exception{

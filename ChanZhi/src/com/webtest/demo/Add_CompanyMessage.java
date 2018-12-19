@@ -3,7 +3,8 @@ package com.webtest.demo;
 import org.testng.annotations.Test;
 
 import com.webtest.core.BaseTest;
-/*8.添加公司信息（站点-语言设置-公司）*/
+/*作者：黄瑾然
+ * 8.添加公司信息（站点-语言设置-公司）*/
 public class Add_CompanyMessage extends BaseTest {
 	@Test
 	public void addMessage() throws Exception {

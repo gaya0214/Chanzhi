@@ -3,7 +3,8 @@ import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 import com.webtest.core.*;
 import com.webtest.demo.*;
-/*44.站点设置（设置-站点设置）*/
+/*作者：韦宇杰
+ * 44.站点设置（设置-站点设置）*/
 public class Site_Setting extends BaseTest{
 	@Test
 	public void siteSetting() throws Exception{

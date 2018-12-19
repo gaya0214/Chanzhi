@@ -3,7 +3,9 @@ package com.webtest.demo;
 import org.testng.annotations.Test;
 
 import com.webtest.core.BaseTest;
-
+/*作者：刘海新
+ * 34.设计设置缩略图设置（设计-设置-缩略图设置）
+*/
 public class Set_DesignThumbnail extends BaseTest{
 	@Test
     public void setDesignThumbmail() throws Exception {

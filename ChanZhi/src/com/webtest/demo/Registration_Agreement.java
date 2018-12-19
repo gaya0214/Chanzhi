@@ -3,7 +3,8 @@ import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 import com.webtest.core.*;
 import com.webtest.demo.*;
-/*47.设置注册协议（设置-注册协议-开启）*/
+/*作者：韦宇杰
+ * 47.设置注册协议（设置-注册协议-开启）*/
 public class Registration_Agreement extends BaseTest{
 	@Test
 	public void registrationAgreement() throws Exception{

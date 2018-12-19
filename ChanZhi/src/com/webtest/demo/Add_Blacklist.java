@@ -3,7 +3,10 @@ package com.webtest.demo;
 import org.testng.annotations.Test;
 
 import com.webtest.core.BaseTest;
-/*14.添加黑名单（站点-语言设置-安全）*/
+
+/*作者：黄瑾然
+ * 14.添加黑名单（站点-语言设置-安全）
+ * */
 public class Add_Blacklist extends BaseTest{
     @Test
     public void addblist() throws Exception {

@@ -3,7 +3,8 @@ package com.webtest.demo;
 import org.testng.annotations.Test;
 
 import com.webtest.core.BaseTest;
-
+/*作者：韦宇杰
+ * 48.设置缓存设置*/
 public class Set_Cache extends BaseTest{
 	@Test
 	 public void setCache() throws Exception {

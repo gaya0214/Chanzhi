@@ -3,7 +3,8 @@ package com.webtest.demo;
 import org.testng.annotations.Test;
 
 import com.webtest.core.BaseTest;
-
+/*作者：刘海新
+ * 33.设计设置列表设置（设计-设置-列表设置）*/
 public class Set_DesignList extends BaseTest{
 	int i=0;
 	@Test

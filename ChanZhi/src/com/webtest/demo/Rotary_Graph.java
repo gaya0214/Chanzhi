@@ -3,7 +3,8 @@ import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 import com.webtest.core.*;
 import com.webtest.demo.*;
-/*39.轮播图添加分组（设计-轮播图）*/
+/*作者：王得润
+ * 39.轮播图添加分组（设计-轮播图）*/
 public class Rotary_Graph extends BaseTest{
 	@Test
 	public void rotaryGraph() throws Exception{

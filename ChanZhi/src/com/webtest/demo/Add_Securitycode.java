@@ -3,7 +3,8 @@ package com.webtest.demo;
 import org.testng.annotations.Test;
 
 import com.webtest.core.BaseTest;
-/*16.验证码设置（站点-语言设置-安全）*/
+/*作者：杨斯媛
+ * 16.验证码设置（站点-语言设置-安全）*/
 public class Add_Securitycode extends BaseTest{
 	@Test
     public void addscode() throws Exception {

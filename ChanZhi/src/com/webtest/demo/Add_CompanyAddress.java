@@ -4,7 +4,8 @@ import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import com.webtest.core.BaseTest;
-/*9.添加联系方式（站点-语言设置-公司）*/
+/*作者：黄瑾然
+ * 9.添加联系方式（站点-语言设置-公司）*/
 public class Add_CompanyAddress extends BaseTest{
 	@Test
     public void addAddress() throws Exception {

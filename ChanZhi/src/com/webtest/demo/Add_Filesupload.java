@@ -3,7 +3,8 @@ package com.webtest.demo;
 import org.testng.annotations.Test;
 
 import com.webtest.core.BaseTest;
-/*17.附件上传（站点-语言设置-安全）*/
+/*作者：杨斯媛
+ * 17.附件上传（站点-语言设置-安全）*/
 public class Add_Filesupload extends BaseTest{
 	@Test
 	 public void addfupload() throws Exception {

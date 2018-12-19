@@ -3,7 +3,8 @@ import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 import com.webtest.core.*;
 import com.webtest.demo.*;
-/*29.自定义添加内容（设计-区块-添加-内容）*/
+/*作者：王得润
+ * 29.自定义添加内容（设计-区块-添加-内容）*/
 public class Add_Content extends BaseTest{
 	@Test
 	public void setBearNumber()throws Exception{

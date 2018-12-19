@@ -2,7 +2,8 @@ package com.webtest.demo;
 
 import org.testng.annotations.Test;
 import com.webtest.core.*;
-/*1.登录（前台）【注册、切换语言】*/
+/*作者：刘琪
+ * 1.登录（前台）【注册、切换语言】*/
 public class Front_Login extends BaseTest{
 	@Test
 

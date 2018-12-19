@@ -3,7 +3,8 @@ import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 import com.webtest.core.*;
 import com.webtest.demo.*;
-/*7.添加产品*/
+/*作者：刘琪
+ * 7.添加产品*/
 public class Add_Product extends BaseTest{
 	@Test
 	public void addProduce() throws Exception{

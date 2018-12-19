@@ -3,7 +3,8 @@ import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 import com.webtest.core.*;
 import com.webtest.demo.*;
-/*35.会员奖励积分（会员-操作-积分）（前提有会员）*/
+/*作者：王得润
+ * 35.会员奖励积分（会员-操作-积分）（前提有会员）*/
 public class Membership_Points extends BaseTest{
 	@Test
 	public void menbershipPoints() throws Exception{

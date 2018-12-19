@@ -3,7 +3,8 @@ package com.webtest.demo;
 import org.testng.annotations.Test;
 
 import com.webtest.core.BaseTest;
-/*30.�Զ��������ʽ�����-����-���-��ʽ��*/
+/*作者：杨斯媛
+ * 30.自定义添加样式（设计-区块-添加-样式）*/
 public class Add_Style extends BaseTest{
     @Test
     public void addStyle() throws Exception {

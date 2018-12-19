@@ -3,7 +3,9 @@ package com.webtest.demo;
 import org.testng.annotations.Test;
 
 import com.webtest.core.BaseTest;
-/*32.�Զ������JS�����-����-���-JS��*/
+/*作者：刘海新
+ * 32.�自定义添加JS（设计-区块-添加-JS）
+*/
 public class Add_Js extends BaseTest{
 	@Test
     public void addJs() throws Exception {

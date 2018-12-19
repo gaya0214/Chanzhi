@@ -4,7 +4,8 @@ import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import com.webtest.core.BaseTest;
-/*添加积分规则（站点-语言设置-积分）*/
+/*作者：黄瑾然
+ * 10添加积分规则（站点-语言设置-积分）*/
 public class Add_ScoreRule extends BaseTest{
     @Test
     public void addRule() throws Exception {

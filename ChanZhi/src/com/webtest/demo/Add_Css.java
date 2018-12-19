@@ -3,7 +3,8 @@ package com.webtest.demo;
 import org.testng.annotations.Test;
 
 import com.webtest.core.BaseTest;
-/*31.自定义添加CSS（设计-区块-添加-CSS）*/
+/*作者：刘海新
+ * 31.自定义添加CSS（设计-区块-添加-CSS）*/
 public class Add_Css extends BaseTest{
 	@Test
     public void addCss() throws Exception {

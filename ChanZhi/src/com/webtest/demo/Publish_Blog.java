@@ -4,7 +4,8 @@ import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 import com.webtest.core.*;
 import com.webtest.demo.*;
-/*5.发布博客*/
+/*作者：刘琪
+ * 5.发布博客*/
 public class Publish_Blog extends BaseTest{
 	@Test
 	public void publishBlog() throws Exception{

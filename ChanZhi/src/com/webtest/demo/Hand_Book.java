@@ -3,7 +3,8 @@ import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 import com.webtest.core.*;
 import com.webtest.demo.*;
-/*6.添加手册*/
+/*作者：刘琪
+ * 6.添加手册*/
 public class Hand_Book extends BaseTest{
 	@Test
 	public void handBook() throws Exception{

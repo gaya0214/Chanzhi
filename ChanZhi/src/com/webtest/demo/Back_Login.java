@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 
 import com.webtest.core.BaseTest;
 import com.webtest.dataprovider.NSDataProvider;
+//作者：刘琪
 //后台登录（输入用户名、密码、点击登录）
 public class Back_Login extends BaseTest{
 	//@Test(dataProvider="excel",dataProviderClass=NSDataProvider.class)

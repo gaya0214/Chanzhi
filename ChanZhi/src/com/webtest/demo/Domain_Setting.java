@@ -3,7 +3,8 @@ import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 import com.webtest.core.*;
 import com.webtest.demo.*;
-/*19.域名设置（站点-域名设施）*/
+/*作者：尹璐
+ * 19.域名设置（站点-域名设施）*/
 public class Domain_Setting extends BaseTest{
 	@Test
 	public void newGroup()throws Exception{

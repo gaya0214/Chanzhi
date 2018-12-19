@@ -3,7 +3,8 @@ package com.webtest.demo;
 import org.testng.annotations.Test;
 
 import com.webtest.core.BaseTest;
-/*25.快递（商城-设置-快递）*/
+/*作者：杨斯媛
+ * 25.快递（商城-设置-快递）*/
 public class Expressage extends BaseTest{
 	@Test
     public void expressage() throws Exception {

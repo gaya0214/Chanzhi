@@ -3,7 +3,8 @@ import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 import com.webtest.core.*;
 import com.webtest.demo.*;
-/*36.批量提交资源（推广-熊掌号-批量提交）*/
+/*作者：王得润
+ * 36.批量提交资源（推广-熊掌号-批量提交）*/
 public class Set_BearNumber extends BaseTest{
 	@Test
 	public void setBearNumber()throws Exception{

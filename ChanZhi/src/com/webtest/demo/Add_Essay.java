@@ -5,7 +5,8 @@ import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
 import com.webtest.core.BaseTest;
-/*3.发布文章*/
+/*作者：黄瑾然
+ * 3.发布文章*/
 public class Add_Essay extends BaseTest{
 	@Test	
 	public void addessay() throws Exception {

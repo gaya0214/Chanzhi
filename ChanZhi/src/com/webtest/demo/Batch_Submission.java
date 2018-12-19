@@ -3,7 +3,8 @@ import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 import com.webtest.core.*;
 import com.webtest.demo.*;
-/*28.熊掌号设置（推广-熊掌号-设置）*/
+/*作者：尹璐
+ * 28.熊掌号设置（推广-熊掌号-设置）*/
 public class Batch_Submission extends BaseTest{
 	@Test
 	public void batchSubmission() throws Exception{

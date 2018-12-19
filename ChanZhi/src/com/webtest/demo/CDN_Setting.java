@@ -3,7 +3,8 @@ import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 import com.webtest.core.*;
 import com.webtest.demo.*;
-/*45.设置CDN设置（设置-CDN设置）*/
+/*作者：韦宇杰
+ * 45.设置CDN设置（设置-CDN设置）*/
 public class CDN_Setting extends BaseTest{
 	@Test
 	public void cdnSetting() throws Exception{

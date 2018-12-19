@@ -3,7 +3,8 @@ package com.webtest.demo;
 import org.testng.annotations.Test;
 
 import com.webtest.core.BaseTest;
-/*23.维护类目（商城-产品）*/
+/*作者：杨斯媛
+ * 23.维护类目（商城-产品）*/
 public class Maintain_Class extends BaseTest{
     @Test
     public void maintanClass() throws Exception {

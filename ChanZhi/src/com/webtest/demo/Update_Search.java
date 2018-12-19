@@ -3,7 +3,8 @@ import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 import com.webtest.core.*;
 import com.webtest.demo.*;
-/*37.更新检索（设置-更新检索）*/
+/*作者：王得润
+ * 37.更新检索（设置-更新检索）*/
 public class Update_Search extends BaseTest{
 	@Test
 	public void updateSearch() throws Exception{
