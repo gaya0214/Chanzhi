@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="17" passed="17">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="5913" started-at="2018-12-17T09:11:03Z" finished-at="2018-12-17T09:11:09Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="5913" started-at="2018-12-17T09:11:03Z" finished-at="2018-12-17T09:11:09Z">
+      <class name="com.webtest.htmlunit_demo.Post_Submit_test">
+        <test-method status="PASS" signature="submit_fail1()[pri:0, instance:com.webtest.htmlunit_demo.Post_Submit_test@59906517]" name="submit_fail1" duration-ms="2518" started-at="2018-12-17T09:11:03Z" finished-at="2018-12-17T09:11:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submit_fail1 -->
+        <test-method status="PASS" signature="submit_fail10()[pri:0, instance:com.webtest.htmlunit_demo.Post_Submit_test@59906517]" name="submit_fail10" duration-ms="220" started-at="2018-12-17T09:11:06Z" finished-at="2018-12-17T09:11:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submit_fail10 -->
+        <test-method status="PASS" signature="submit_fail11()[pri:0, instance:com.webtest.htmlunit_demo.Post_Submit_test@59906517]" name="submit_fail11" duration-ms="230" started-at="2018-12-17T09:11:06Z" finished-at="2018-12-17T09:11:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submit_fail11 -->
+        <test-method status="PASS" signature="submit_fail12()[pri:0, instance:com.webtest.htmlunit_demo.Post_Submit_test@59906517]" name="submit_fail12" duration-ms="300" started-at="2018-12-17T09:11:06Z" finished-at="2018-12-17T09:11:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submit_fail12 -->
+        <test-method status="PASS" signature="submit_fail13()[pri:0, instance:com.webtest.htmlunit_demo.Post_Submit_test@59906517]" name="submit_fail13" duration-ms="186" started-at="2018-12-17T09:11:07Z" finished-at="2018-12-17T09:11:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submit_fail13 -->
+        <test-method status="PASS" signature="submit_fail14()[pri:0, instance:com.webtest.htmlunit_demo.Post_Submit_test@59906517]" name="submit_fail14" duration-ms="200" started-at="2018-12-17T09:11:07Z" finished-at="2018-12-17T09:11:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submit_fail14 -->
+        <test-method status="PASS" signature="submit_fail15()[pri:0, instance:com.webtest.htmlunit_demo.Post_Submit_test@59906517]" name="submit_fail15" duration-ms="218" started-at="2018-12-17T09:11:07Z" finished-at="2018-12-17T09:11:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submit_fail15 -->
+        <test-method status="PASS" signature="submit_fail16()[pri:0, instance:com.webtest.htmlunit_demo.Post_Submit_test@59906517]" name="submit_fail16" duration-ms="190" started-at="2018-12-17T09:11:07Z" finished-at="2018-12-17T09:11:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submit_fail16 -->
+        <test-method status="PASS" signature="submit_fail2()[pri:0, instance:com.webtest.htmlunit_demo.Post_Submit_test@59906517]" name="submit_fail2" duration-ms="200" started-at="2018-12-17T09:11:07Z" finished-at="2018-12-17T09:11:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submit_fail2 -->
+        <test-method status="PASS" signature="submit_fail3()[pri:0, instance:com.webtest.htmlunit_demo.Post_Submit_test@59906517]" name="submit_fail3" duration-ms="207" started-at="2018-12-17T09:11:08Z" finished-at="2018-12-17T09:11:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submit_fail3 -->
+        <test-method status="PASS" signature="submit_fail4()[pri:0, instance:com.webtest.htmlunit_demo.Post_Submit_test@59906517]" name="submit_fail4" duration-ms="210" started-at="2018-12-17T09:11:08Z" finished-at="2018-12-17T09:11:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submit_fail4 -->
+        <test-method status="PASS" signature="submit_fail5()[pri:0, instance:com.webtest.htmlunit_demo.Post_Submit_test@59906517]" name="submit_fail5" duration-ms="180" started-at="2018-12-17T09:11:08Z" finished-at="2018-12-17T09:11:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submit_fail5 -->
+        <test-method status="PASS" signature="submit_fail6()[pri:0, instance:com.webtest.htmlunit_demo.Post_Submit_test@59906517]" name="submit_fail6" duration-ms="210" started-at="2018-12-17T09:11:08Z" finished-at="2018-12-17T09:11:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submit_fail6 -->
+        <test-method status="PASS" signature="submit_fail7()[pri:0, instance:com.webtest.htmlunit_demo.Post_Submit_test@59906517]" name="submit_fail7" duration-ms="180" started-at="2018-12-17T09:11:08Z" finished-at="2018-12-17T09:11:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submit_fail7 -->
+        <test-method status="PASS" signature="submit_fail8()[pri:0, instance:com.webtest.htmlunit_demo.Post_Submit_test@59906517]" name="submit_fail8" duration-ms="183" started-at="2018-12-17T09:11:09Z" finished-at="2018-12-17T09:11:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submit_fail8 -->
+        <test-method status="PASS" signature="submit_fail9()[pri:0, instance:com.webtest.htmlunit_demo.Post_Submit_test@59906517]" name="submit_fail9" duration-ms="209" started-at="2018-12-17T09:11:09Z" finished-at="2018-12-17T09:11:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submit_fail9 -->
+        <test-method status="PASS" signature="submit_success()[pri:0, instance:com.webtest.htmlunit_demo.Post_Submit_test@59906517]" name="submit_success" duration-ms="190" started-at="2018-12-17T09:11:09Z" finished-at="2018-12-17T09:11:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submit_success -->
+      </class> <!-- com.webtest.htmlunit_demo.Post_Submit_test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
