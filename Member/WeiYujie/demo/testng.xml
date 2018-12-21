@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="test" verbose="10" >
+  <test name="testcase1" >
+    <classes>
+        <class name="com.webtest.demo.login"/>
+        <class name="com.webtest.demo.PublishBlog"/>
+        <class name="com.webtest.demo.AddProduct"/>
+        <class name="com.webtest.demo.AddManual"/>
+    </classes>
+  </test>
+  
+  <test name="testcase4" >
+    <classes>
+        <class name="com.webtest.demo.login"/>
+        <class name="com.webtest.demo.ClickIntegralSettlement"/>
+    </classes>
+  </test>
+  <test name="testcase5" >
+    <classes>
+        <class name="com.webtest.demo.login"/>
+        <class name="com.webtest.demo.AddOpenLogin"/>
+    </classes>
+  </test>
+  <test name="testcase6" >
+    <classes>
+        <class name="com.webtest.demo.login"/>
+        <class name="com.webtest.demo.SendMailSetting"/>
+    </classes>
+  </test>
+</suite>   
