@@ -1,0 +1,14 @@
+eclipse.preferences.version=1
+encoding//src/com/webtest/core/MailUtil.java=UTF-8
+encoding//src/com/webtest/core/WebDriverEngine.java=UTF-8
+encoding//src/com/webtest/demo/AddCss.java=UTF-8
+encoding//src/com/webtest/demo/AddJs.java=UTF-8
+encoding//src/com/webtest/demo/AddStyle.java=UTF-8
+encoding//src/com/webtest/demo/SetAddressType.java=UTF-8
+encoding//src/com/webtest/demo/SetAdministrator.java=UTF-8
+encoding//src/com/webtest/demo/SetCache.java=UTF-8
+encoding//src/com/webtest/demo/SetDesignList.java=UTF-8
+encoding//src/com/webtest/demo/SetDesignThumbnail.java=UTF-8
+encoding//src/com/webtest/demo/SetDomainName.java=UTF-8
+encoding//src/com/webtest/demo/SetFlowStatistics.java=UTF-8
+encoding//src/com/webtest/demo/SetSecurity.java=UTF-8
