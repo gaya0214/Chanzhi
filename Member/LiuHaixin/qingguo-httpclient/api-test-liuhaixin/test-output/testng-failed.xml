@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.edu.test.HttpclientTestDemo1">
+      <class name="com.edu.interfacetest.Sumit">
         <methods>
-          <include name="TestSkuList1"/>
+          <include name="submitOrder"/>
         </methods>
-      </class> <!-- com.edu.test.HttpclientTestDemo1 -->
+      </class> <!-- com.edu.interfacetest.Sumit -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

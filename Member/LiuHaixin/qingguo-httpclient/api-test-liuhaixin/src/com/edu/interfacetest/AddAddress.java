@@ -1,30 +1,584 @@
 package com.edu.interfacetest;
 
-import org.apache.http.client.CookieStore;
+import org.apache.http.HttpEntity;
+import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
+import org.apache.http.util.EntityUtils;
+import org.testng.annotations.Test;
 
-import com.edu.core.HttpDriver;
+import com.edu.core.BaseTest;
 
-import net.sf.json.JSONObject;
+public class AddAddress extends BaseTest{
+	CloseableHttpClient httpclient;
+	CloseableHttpResponse response;
 
-public class AddAddress {
-public void addAdress() throws Exception {
+	@Test
+	public void TestAdd1() throws Exception {
+		try {
+			httpclient=HttpClients.createDefault();
+    		HttpPost httpPost1=new HttpPost("http://study-perf.qa.netease.com/common/fgadmin/login");
+    		httpPost1.setHeader("Content-Type", "application/json");
+    		StringEntity entity1=new StringEntity("{\"phoneArea\":\"86\",\"phoneNumber\":\"20000000000\","+"\"password\":\"netease123\"}","utf-8");
+    		httpPost1.setEntity(entity1);
+    		response=httpclient.execute(httpPost1);
+    		HttpEntity httpEntity1=response.getEntity();
+    		HttpPost httpPost=new HttpPost("http://study-perf.qa.netease.com//fgadmin/address/new");
+    		httpPost.setHeader("Content-Type", "application/json");
+    		StringEntity entity=new StringEntity("{\"receiverName\":\"张三\",\"cellPhone\":\"12345678901\","+"\"addressDetail\":\"浙江大学\",\"province\":\"浙江省\",\"city\":\"杭州市\",\"area\":\"滨江区\"}","utf-8");
+    		httpPost.setEntity(entity);
+    		response=httpclient.execute(httpPost);
+    		HttpEntity httpEntity=response.getEntity();
+    		System.out.println(EntityUtils.toString(httpEntity));
+    		EntityUtils.consume(httpEntity);
+    	}catch(Exception e) {
+    		e.printStackTrace();
+    	}
+	}
+	
+	@Test
+	public void TestAdd2() throws Exception {
+		try {
+	   		httpclient=HttpClients.createDefault();
+	   		HttpPost httpPost1=new HttpPost("http://study-perf.qa.netease.com/common/fgadmin/login");
+    		httpPost1.setHeader("Content-Type", "application/json");
+    		StringEntity entity1=new StringEntity("{\"phoneArea\":\"86\",\"phoneNumber\":\"20000000000\","+"\"password\":\"netease123\"}","utf-8");
+    		httpPost1.setEntity(entity1);
+    		response=httpclient.execute(httpPost1);
+    		HttpEntity httpEntity1=response.getEntity();
+	   		HttpPost httpPost=new HttpPost("http://study-perf.qa.netease.com//fgadmin/address/new");
+	   		httpPost.setHeader("Content-Type", "application/json");
+	   		StringEntity entity=new StringEntity("{\"receiverName\":123,\"cellPhone\":\"12345678901\","+"\"addressDetail\":\"浙江大学\",\"province\":\"浙江省\",\"city\":\"杭州市\",\"area\":\"滨江区\"}","utf-8");
+	   		httpPost.setEntity(entity);
+	   		response=httpclient.execute(httpPost);
+	   		HttpEntity httpEntity=response.getEntity();
+	   		System.out.println(EntityUtils.toString(httpEntity));
+	   		EntityUtils.consume(httpEntity);
+	   	}catch(Exception e) {
+	   		e.printStackTrace();
+	   	}
+	}
+	
+	@Test
+	public void TestAdd3() throws Exception {
+		try {
+    		httpclient=HttpClients.createDefault();
+    		HttpPost httpPost1=new HttpPost("http://study-perf.qa.netease.com/common/fgadmin/login");
+    		httpPost1.setHeader("Content-Type", "application/json");
+    		StringEntity entity1=new StringEntity("{\"phoneArea\":\"86\",\"phoneNumber\":\"20000000000\","+"\"password\":\"netease123\"}","utf-8");
+    		httpPost1.setEntity(entity1);
+    		response=httpclient.execute(httpPost1);
+    		HttpEntity httpEntity1=response.getEntity();
+    		HttpPost httpPost=new HttpPost("http://study-perf.qa.netease.com//fgadmin/address/new");
+    		httpPost.setHeader("Content-Type", "application/json");
+    		StringEntity entity=new StringEntity("{\"receiverName\":\"张三\",\"cellPhone\":12345678901,"+"\"addressDetail\":\"浙江大学\",\"province\":\"浙江省\",\"city\":\"杭州市\",\"area\":\"滨江区\"}","utf-8");
+    		httpPost.setEntity(entity);
+	   		response=httpclient.execute(httpPost);
+	   		HttpEntity httpEntity=response.getEntity();
+	   		System.out.println(EntityUtils.toString(httpEntity));
+	   		EntityUtils.consume(httpEntity);
+     	}catch(Exception e) {
+    		e.printStackTrace();
+	   	}
+	}
 		
-		CookieStore cookie = Common.getLoginCookie();
+	@Test
+	public void TestAdd4() throws Exception {
+		try {
+	   		httpclient=HttpClients.createDefault();
+	   		HttpPost httpPost=new HttpPost("http://study-perf.qa.netease.com//fgadmin/address/new");
+	   		httpPost.setHeader("Content-Type", "application/json");
+	   		StringEntity entity=new StringEntity("{\"receiverName\":\"张三\",\"cellPhone\":\"12345678901\","+"\"addressDetail\":123,\"province\":\"浙江省\",\"city\":\"杭州市\",\"area\":\"滨江区\"}","utf-8");
+	   		httpPost.setEntity(entity);
+	   		response=httpclient.execute(httpPost);
+	   		HttpEntity httpEntity=response.getEntity();
+	   		System.out.println(EntityUtils.toString(httpEntity));
+	   		EntityUtils.consume(httpEntity);
+	   	}catch(Exception e) {
+	   		e.printStackTrace();
+	   	}
+	}
+	
+	@Test
+	public void TestAdd5() throws Exception {
+		try {
+    		httpclient=HttpClients.createDefault();
+    		HttpPost httpPost1=new HttpPost("http://study-perf.qa.netease.com/common/fgadmin/login");
+    		httpPost1.setHeader("Content-Type", "application/json");
+    		StringEntity entity1=new StringEntity("{\"phoneArea\":\"86\",\"phoneNumber\":\"20000000000\","+"\"password\":\"netease123\"}","utf-8");
+    		httpPost1.setEntity(entity1);
+    		response=httpclient.execute(httpPost1);
+    		HttpEntity httpEntity1=response.getEntity();
+    		HttpPost httpPost=new HttpPost("http://study-perf.qa.netease.com//fgadmin/address/new");
+    		httpPost.setHeader("Content-Type", "application/json");
+    		StringEntity entity=new StringEntity("{\"receiverName\":\"张三\",\"cellPhone\":\"12345678901\","+"\"addressDetail\":\"浙江大学\",\"province\":571,\"city\":\"杭州市\",\"area\":\"滨江区\"}","utf-8");
+    		httpPost.setEntity(entity);
+    		response=httpclient.execute(httpPost);
+    		HttpEntity httpEntity=response.getEntity();
+    		System.out.println(EntityUtils.toString(httpEntity));
+    		EntityUtils.consume(httpEntity);
+    	}catch(Exception e) {
+    		e.printStackTrace();
+    	}
+	}
+		
+	@Test
+	public void TestAdd6() throws Exception {
+		try {
+	   		httpclient=HttpClients.createDefault();
+	   		HttpPost httpPost1=new HttpPost("http://study-perf.qa.netease.com/common/fgadmin/login");
+    		httpPost1.setHeader("Content-Type", "application/json");
+    		StringEntity entity1=new StringEntity("{\"phoneArea\":\"86\",\"phoneNumber\":\"20000000000\","+"\"password\":\"netease123\"}","utf-8");
+    		httpPost1.setEntity(entity1);
+    		response=httpclient.execute(httpPost1);
+    		HttpEntity httpEntity1=response.getEntity();
+	   		HttpPost httpPost=new HttpPost("http://study-perf.qa.netease.com//fgadmin/address/new");
+	   		httpPost.setHeader("Content-Type", "application/json");
+	   		StringEntity entity=new StringEntity("{\"receiverName\":\"张三\",\"cellPhone\":\"12345678901\","+"\"addressDetail\":\"浙江大学\",\"province\":\"浙江省\",\"city\":571,\"area\":\"滨江区\"}","utf-8");
+	   		httpPost.setEntity(entity);
+	   		response=httpclient.execute(httpPost);
+	   		HttpEntity httpEntity=response.getEntity();
+	   		System.out.println(EntityUtils.toString(httpEntity));
+	   		EntityUtils.consume(httpEntity);
+	   	}catch(Exception e) {
+	   		e.printStackTrace();
+	   	}
+	}
+		
+	@Test
+	public void TestAdd7() throws Exception {
+		try {
+    		httpclient=HttpClients.createDefault();
+    		HttpPost httpPost1=new HttpPost("http://study-perf.qa.netease.com/common/fgadmin/login");
+    		httpPost1.setHeader("Content-Type", "application/json");
+    		StringEntity entity1=new StringEntity("{\"phoneArea\":\"86\",\"phoneNumber\":\"20000000000\","+"\"password\":\"netease123\"}","utf-8");
+    		httpPost1.setEntity(entity1);
+    		response=httpclient.execute(httpPost1);
+    		HttpEntity httpEntity1=response.getEntity();
+    		HttpPost httpPost=new HttpPost("http://study-perf.qa.netease.com//fgadmin/address/new");
+    		httpPost.setHeader("Content-Type", "application/json");
+    		StringEntity entity=new StringEntity("{\"receiverName\":\"张三\",\"cellPhone\":\"12345678901\","+"\"addressDetail\":\"浙江大学\",\"province\":\"浙江省\",\"city\":\"杭州市\",\"area\":571}","utf-8");
+    		httpPost.setEntity(entity);
+	   		response=httpclient.execute(httpPost);
+	   		HttpEntity httpEntity=response.getEntity();
+	   		System.out.println(EntityUtils.toString(httpEntity));
+	   		EntityUtils.consume(httpEntity);
+     	}catch(Exception e) {
+    		e.printStackTrace();
+	   	}
+	}
+			
+	@Test
+	public void TestAdd8() throws Exception {
+		try {
+	   		httpclient=HttpClients.createDefault();
+	   		HttpPost httpPost1=new HttpPost("http://study-perf.qa.netease.com/common/fgadmin/login");
+    		httpPost1.setHeader("Content-Type", "application/json");
+    		StringEntity entity1=new StringEntity("{\"phoneArea\":\"86\",\"phoneNumber\":\"20000000000\","+"\"password\":\"netease123\"}","utf-8");
+    		httpPost1.setEntity(entity1);
+    		response=httpclient.execute(httpPost1);
+    		HttpEntity httpEntity1=response.getEntity();
+	   		HttpPost httpPost=new HttpPost("http://study-perf.qa.netease.com//fgadmin/address/new");
+	   		httpPost.setHeader("Content-Type", "application/json");
+	   		StringEntity entity=new StringEntity("{\"cellPhone\":\"12345678901\","+"\"addressDetail\":\"浙江大学\",\"province\":\"浙江省\",\"city\":\"杭州市\",\"area\":\"滨江区\"}","utf-8");
+	   		httpPost.setEntity(entity);
+	   		response=httpclient.execute(httpPost);
+	   		HttpEntity httpEntity=response.getEntity();
+	   		System.out.println(EntityUtils.toString(httpEntity));
+	   		EntityUtils.consume(httpEntity);
+	   	}catch(Exception e) {
+	   		e.printStackTrace();
+	   	}
+	}
+	
 
-		String url = "http://study-perf.qa.netease.com/fgadmin/address/new";
-
-		JSONObject address = new JSONObject();
-		address.element("id", "");
-		address.element("receiverName", "张三");
-		address.element("cellPhone", "18788990011");
-		address.element("province", "重庆市");
-		address.element("city", "万州区");
-		address.element("area", "");
-		address.element("addressDetail", "中山路125号");
-		String result = HttpDriver.doPost(url, address, cookie);
-		System.out.println(result);
-
+	@Test
+	public void TestAdd9() throws Exception {
+		try {
+	   		httpclient=HttpClients.createDefault();
+	   		HttpPost httpPost1=new HttpPost("http://study-perf.qa.netease.com/common/fgadmin/login");
+    		httpPost1.setHeader("Content-Type", "application/json");
+    		StringEntity entity1=new StringEntity("{\"phoneArea\":\"86\",\"phoneNumber\":\"20000000000\","+"\"password\":\"netease123\"}","utf-8");
+    		httpPost1.setEntity(entity1);
+    		response=httpclient.execute(httpPost1);
+    		HttpEntity httpEntity1=response.getEntity();
+	   		HttpPost httpPost=new HttpPost("http://study-perf.qa.netease.com//fgadmin/address/new");
+	   		httpPost.setHeader("Content-Type", "application/json");
+	   		StringEntity entity=new StringEntity("{\"receiverName\":\"张三\","+"\"addressDetail\":\"浙江大学\",\"province\":\"浙江省\",\"city\":\"杭州市\",\"area\":\"滨江区\"}","utf-8");
+	   		httpPost.setEntity(entity);
+	   		response=httpclient.execute(httpPost);
+	   		HttpEntity httpEntity=response.getEntity();
+	   		System.out.println(EntityUtils.toString(httpEntity));
+	   		EntityUtils.consume(httpEntity);
+	   	}catch(Exception e) {
+	   		e.printStackTrace();
+	   	}
 	}
 
+	@Test
+	public void TestAdd10() throws Exception {
+		try {
+	   		httpclient=HttpClients.createDefault();
+	   		HttpPost httpPost1=new HttpPost("http://study-perf.qa.netease.com/common/fgadmin/login");
+    		httpPost1.setHeader("Content-Type", "application/json");
+    		StringEntity entity1=new StringEntity("{\"phoneArea\":\"86\",\"phoneNumber\":\"20000000000\","+"\"password\":\"netease123\"}","utf-8");
+    		httpPost1.setEntity(entity1);
+    		response=httpclient.execute(httpPost1);
+    		HttpEntity httpEntity1=response.getEntity();
+	   		HttpPost httpPost=new HttpPost("http://study-perf.qa.netease.com//fgadmin/address/new");
+	   		httpPost.setHeader("Content-Type", "application/json");
+	   		StringEntity entity=new StringEntity("{\"receiverName\":\"张三\",\"cellPhone\":\"12345678901\",\"province\":\"浙江省\""+",\"city\":\"杭州市\",\"area\":\"滨江区\"}","utf-8");
+	   		httpPost.setEntity(entity);
+	   		response=httpclient.execute(httpPost);
+	   		HttpEntity httpEntity=response.getEntity();
+	   		System.out.println(EntityUtils.toString(httpEntity));
+	   		EntityUtils.consume(httpEntity);
+     	}catch(Exception e) {
+    		e.printStackTrace();
+    	}
+	}
+	
+	@Test
+	public void TestAdd11() throws Exception {
+		try {
+	   		httpclient=HttpClients.createDefault();
+	   		HttpPost httpPost1=new HttpPost("http://study-perf.qa.netease.com/common/fgadmin/login");
+    		httpPost1.setHeader("Content-Type", "application/json");
+    		StringEntity entity1=new StringEntity("{\"phoneArea\":\"86\",\"phoneNumber\":\"20000000000\","+"\"password\":\"netease123\"}","utf-8");
+    		httpPost1.setEntity(entity1);
+    		response=httpclient.execute(httpPost1);
+    		HttpEntity httpEntity1=response.getEntity();
+	   		HttpPost httpPost=new HttpPost("http://study-perf.qa.netease.com//fgadmin/address/new");
+	   		httpPost.setHeader("Content-Type", "application/json");
+	   		StringEntity entity=new StringEntity("{\"receiverName\":\"张三\",\"cellPhone\":\"12345678901\",\"addressDetail\":\"浙江大学\""+",\"city\":\"杭州市\",\"area\":\"滨江区\"}","utf-8");
+	   		httpPost.setEntity(entity);
+	   		response=httpclient.execute(httpPost);
+	   		HttpEntity httpEntity=response.getEntity();
+	   		System.out.println(EntityUtils.toString(httpEntity));
+	   		EntityUtils.consume(httpEntity);
+     	}catch(Exception e) {
+    		e.printStackTrace();
+    	}
+	}	
+	
+	@Test
+	public void TestAdd12() throws Exception {
+		try {
+	   		httpclient=HttpClients.createDefault();
+	   		HttpPost httpPost1=new HttpPost("http://study-perf.qa.netease.com/common/fgadmin/login");
+    		httpPost1.setHeader("Content-Type", "application/json");
+    		StringEntity entity1=new StringEntity("{\"phoneArea\":\"86\",\"phoneNumber\":\"20000000000\","+"\"password\":\"netease123\"}","utf-8");
+    		httpPost1.setEntity(entity1);
+    		response=httpclient.execute(httpPost1);
+    		HttpEntity httpEntity1=response.getEntity();
+	   		HttpPost httpPost=new HttpPost("http://study-perf.qa.netease.com//fgadmin/address/new");
+	   		httpPost.setHeader("Content-Type", "application/json");
+	   		StringEntity entity=new StringEntity("{\"receiverName\":\"张三\",\"cellPhone\":\"12345678901\",\"addressDetail\":\"浙江大学\""+",\"province\":\"浙江省\",\"area\":\"滨江区\"}","utf-8");
+	   		httpPost.setEntity(entity);
+	   		response=httpclient.execute(httpPost);
+	   		HttpEntity httpEntity=response.getEntity();
+	   		System.out.println(EntityUtils.toString(httpEntity));
+	   		EntityUtils.consume(httpEntity);
+     	}catch(Exception e) {
+    		e.printStackTrace();
+    	}
+	}
+	
+	@Test
+	public void TestAdd13() throws Exception {
+		try {
+	   		httpclient=HttpClients.createDefault();
+	   		HttpPost httpPost1=new HttpPost("http://study-perf.qa.netease.com/common/fgadmin/login");
+    		httpPost1.setHeader("Content-Type", "application/json");
+    		StringEntity entity1=new StringEntity("{\"phoneArea\":\"86\",\"phoneNumber\":\"20000000000\","+"\"password\":\"netease123\"}","utf-8");
+    		httpPost1.setEntity(entity1);
+    		response=httpclient.execute(httpPost1);
+    		HttpEntity httpEntity1=response.getEntity();
+	   		HttpPost httpPost=new HttpPost("http://study-perf.qa.netease.com//fgadmin/address/new");
+	   		httpPost.setHeader("Content-Type", "application/json");
+	   		StringEntity entity=new StringEntity("{\"receiverName\":\"张三\",\"cellPhone\":\"12345678901\",\"addressDetail\":\"浙江大学\""+",\"province\":\"浙江省\",\"city\":\"杭州市\"}","utf-8");
+	   		httpPost.setEntity(entity);
+	   		response=httpclient.execute(httpPost);
+	   		HttpEntity httpEntity=response.getEntity();
+	   		System.out.println(EntityUtils.toString(httpEntity));
+	   		EntityUtils.consume(httpEntity);
+     	}catch(Exception e) {
+    		e.printStackTrace();
+    	}
+	}	
+	
+	@Test
+	public void TestAdd14() throws Exception {
+		try {
+	   		httpclient=HttpClients.createDefault();
+	   		HttpPost httpPost1=new HttpPost("http://study-perf.qa.netease.com/common/fgadmin/login");
+    		httpPost1.setHeader("Content-Type", "application/json");
+    		StringEntity entity1=new StringEntity("{\"phoneArea\":\"86\",\"phoneNumber\":\"20000000000\","+"\"password\":\"netease123\"}","utf-8");
+    		httpPost1.setEntity(entity1);
+    		response=httpclient.execute(httpPost1);
+    		HttpEntity httpEntity1=response.getEntity();
+	   		HttpPost httpPost=new HttpPost("http://study-perf.qa.netease.com//fgadmin/address/new");
+	   		httpPost.setHeader("Content-Type", "application/json");
+	   		StringEntity entity=new StringEntity("{\"receiverName\":\"张三\",\"cellPhone\":\"12345678901\",\"addressDetail\":\"复旦大学\""+",\"province\":\"上海市\",\"city\":\"上海市\",\"area\":\"黄浦区\"}","utf-8");
+	   		httpPost.setEntity(entity);
+	   		response=httpclient.execute(httpPost);
+	   		HttpEntity httpEntity=response.getEntity();
+	   		System.out.println(EntityUtils.toString(httpEntity));
+	   		EntityUtils.consume(httpEntity);
+     	}catch(Exception e) {
+    		e.printStackTrace();
+    	}
+	}	
+	
+	@Test
+	public void TestAdd15() throws Exception {
+		try {
+	   		httpclient=HttpClients.createDefault();
+	   		HttpPost httpPost1=new HttpPost("http://study-perf.qa.netease.com/common/fgadmin/login");
+    		httpPost1.setHeader("Content-Type", "application/json");
+    		StringEntity entity1=new StringEntity("{\"phoneArea\":\"86\",\"phoneNumber\":\"20000000000\","+"\"password\":\"netease123\"}","utf-8");
+    		httpPost1.setEntity(entity1);
+    		response=httpclient.execute(httpPost1);
+    		HttpEntity httpEntity1=response.getEntity();
+	   		HttpPost httpPost=new HttpPost("http://study-perf.qa.netease.com//fgadmin/address/new");
+	   		httpPost.setHeader("Content-Type", "application/json");
+	   		StringEntity entity=new StringEntity("{\"receiverName\":\"张三\",\"cellPhone\":\"12345678901\",\"addressDetail\":\"南京大学\""+",\"province\":\"江苏省\",\"city\":\"南京市\",\"area\":\"西湖区\"}","utf-8");
+	   		httpPost.setEntity(entity);
+	   		response=httpclient.execute(httpPost);
+	   		HttpEntity httpEntity=response.getEntity();
+	   		System.out.println(EntityUtils.toString(httpEntity));
+	   		EntityUtils.consume(httpEntity);
+     	}catch(Exception e) {
+    		e.printStackTrace();
+    	}
+	}	
+	
+	@Test
+	public void TestAdd16() throws Exception {
+		try {
+	   		httpclient=HttpClients.createDefault();
+	   		HttpPost httpPost1=new HttpPost("http://study-perf.qa.netease.com/common/fgadmin/login");
+    		httpPost1.setHeader("Content-Type", "application/json");
+    		StringEntity entity1=new StringEntity("{\"phoneArea\":\"86\",\"phoneNumber\":\"20000000000\","+"\"password\":\"netease123\"}","utf-8");
+    		httpPost1.setEntity(entity1);
+    		response=httpclient.execute(httpPost1);
+    		HttpEntity httpEntity1=response.getEntity();
+	   		HttpPost httpPost=new HttpPost("http://study-perf.qa.netease.com//fgadmin/address/new");
+	   		httpPost.setHeader("Content-Type", "application/json");
+	   		StringEntity entity=new StringEntity("{\"receiverName\":\"张三\",\"cellPhone\":\"12345678901\",\"addressDetail\":\"南京大学\""+",\"province\":\"浙江省\",\"city\":\"南京市\",\"area\":\"西湖区\"}","utf-8");
+	   		httpPost.setEntity(entity);
+	   		response=httpclient.execute(httpPost);
+	   		HttpEntity httpEntity=response.getEntity();
+	   		System.out.println(EntityUtils.toString(httpEntity));
+	   		EntityUtils.consume(httpEntity);
+     	}catch(Exception e) {
+    		e.printStackTrace();
+    	}
+	}	
 
+	
+	@Test
+	public void TestAdd17() throws Exception {
+		try {
+	   		httpclient=HttpClients.createDefault();
+	   		HttpPost httpPost1=new HttpPost("http://study-perf.qa.netease.com/common/fgadmin/login");
+    		httpPost1.setHeader("Content-Type", "application/json");
+    		StringEntity entity1=new StringEntity("{\"phoneArea\":\"86\",\"phoneNumber\":\"20000000000\","+"\"password\":\"netease123\"}","utf-8");
+    		httpPost1.setEntity(entity1);
+    		response=httpclient.execute(httpPost1);
+    		HttpEntity httpEntity1=response.getEntity();
+	   		HttpPost httpPost=new HttpPost("http://study-perf.qa.netease.com//fgadmin/address/new");
+	   		httpPost.setHeader("Content-Type", "application/json");
+	   		StringEntity entity=new StringEntity("{\"receiverName\":\"张三\",\"cellPhone\":\"12345678901\",\"addressDetail\":\"南京大学\""+",\"province\":\"江苏省\",\"city\":\"杭州市\",\"area\":\"西湖区\"}","utf-8");
+	   		httpPost.setEntity(entity);
+	   		response=httpclient.execute(httpPost);
+	   		HttpEntity httpEntity=response.getEntity();
+	   		System.out.println(EntityUtils.toString(httpEntity));
+	   		EntityUtils.consume(httpEntity);
+     	}catch(Exception e) {
+    		e.printStackTrace();
+    	}
+	}		
+
+
+	@Test
+	public void TestAdd18() throws Exception {
+		try {
+	   		httpclient=HttpClients.createDefault();
+	   		HttpPost httpPost1=new HttpPost("http://study-perf.qa.netease.com/common/fgadmin/login");
+    		httpPost1.setHeader("Content-Type", "application/json");
+    		StringEntity entity1=new StringEntity("{\"phoneArea\":\"86\",\"phoneNumber\":\"20000000000\","+"\"password\":\"netease123\"}","utf-8");
+    		httpPost1.setEntity(entity1);
+    		response=httpclient.execute(httpPost1);
+    		HttpEntity httpEntity1=response.getEntity();
+	   		HttpPost httpPost=new HttpPost("http://study-perf.qa.netease.com//fgadmin/address/new");
+	   		httpPost.setHeader("Content-Type", "application/json");
+	   		StringEntity entity=new StringEntity("{\"receiverName\":\"张三\",\"cellPhone\":\"12345678901\",\"addressDetail\":\"南京大学\""+",\"province\":\"安徽省\",\"city\":\"南京市\",\"area\":\"西湖区\"}","utf-8");
+	   		httpPost.setEntity(entity);
+	   		response=httpclient.execute(httpPost);
+	   		HttpEntity httpEntity=response.getEntity();
+	   		System.out.println(EntityUtils.toString(httpEntity));
+	   		EntityUtils.consume(httpEntity);
+     	}catch(Exception e) {
+    		e.printStackTrace();
+    	}
+	}	
+	
+
+
+	@Test
+	public void TestAdd19() throws Exception {
+		try {
+	    	httpclient=HttpClients.createDefault();
+	    	HttpPost httpPost1=new HttpPost("http://study-perf.qa.netease.com/common/fgadmin/login");
+    		httpPost1.setHeader("Content-Type", "application/json");
+    		StringEntity entity1=new StringEntity("{\"phoneArea\":\"86\",\"phoneNumber\":\"20000000000\","+"\"password\":\"netease123\"}","utf-8");
+    		httpPost1.setEntity(entity1);
+    		response=httpclient.execute(httpPost1);
+    		HttpEntity httpEntity1=response.getEntity();
+	    	HttpPost httpPost=new HttpPost("http://study-perf.qa.netease.com//fgadmin/address/new");
+	    	httpPost.setHeader("Content-Type", "application/json");
+	    	StringEntity entity=new StringEntity("{\"receiverName\":\"张三\",\"cellPhone\":\"12345678901\","+"\"addressDetail\":\"浙江大学\",\"province\":\"浙江省\",\"city\":\"杭州市\",\"area\":\"滨江区\"}","utf-8");
+	    	httpPost.setEntity(entity);
+	    	response=httpclient.execute(httpPost);
+	    	httpclient=HttpClients.createDefault();
+	    	HttpPost httpPost2=new HttpPost("http://study-perf.qa.netease.com//fgadmin/address/new");
+	    	httpPost2.setHeader("Content-Type", "application/json");
+	    	StringEntity entity2=new StringEntity("{\"receiverName\":\"张三\",\"cellPhone\":\"12345678901\","+"\"addressDetail\":\"浙江大学\",\"province\":\"浙江省\",\"city\":\"杭州市\",\"area\":\"滨江区\"}","utf-8");
+	    	httpPost2.setEntity(entity2);
+	    	response=httpclient.execute(httpPost2);
+	    	HttpEntity httpEntity=response.getEntity();
+	    	System.out.println(EntityUtils.toString(httpEntity));
+	    	EntityUtils.consume(httpEntity);
+	    }catch(Exception e) {
+	    	e.printStackTrace();
+	    }
+	}
+		
+
+
+	@Test
+	public void TestAdd20() throws Exception {
+		try {
+		   	httpclient=HttpClients.createDefault();
+		   	HttpPost httpPost1=new HttpPost("http://study-perf.qa.netease.com/common/fgadmin/login");
+    		httpPost1.setHeader("Content-Type", "application/json");
+    		StringEntity entity1=new StringEntity("{\"phoneArea\":\"86\",\"phoneNumber\":\"20000000000\","+"\"password\":\"netease123\"}","utf-8");
+    		httpPost1.setEntity(entity1);
+    		response=httpclient.execute(httpPost1);
+    		HttpEntity httpEntity1=response.getEntity();
+		   	HttpPost httpPost=new HttpPost("http://study-perf.qa.netease.com//fgadmin/address/new");
+		   	httpPost.setHeader("Content-Type", "application/json");
+		   	StringEntity entity=new StringEntity("{\"receiverName\":\"张大\",\"cellPhone\":\"12345678901\",\"addressDetail\":\"南京大学\""+",\"province\":\"安徽省\",\"city\":\"南京市\",\"area\":\"西湖区\"}","utf-8");
+		   	httpPost.setEntity(entity);
+		   	httpclient=HttpClients.createDefault();
+		   	HttpPost httpPost2=new HttpPost("http://study-perf.qa.netease.com//fgadmin/address/new");
+		   	httpPost2.setHeader("Content-Type", "application/json");
+		   	StringEntity entity2=new StringEntity("{\"receiverName\":\"张二\",\"cellPhone\":\"12345678901\",\"addressDetail\":\"南京大学\""+",\"province\":\"安徽省\",\"city\":\"南京市\",\"area\":\"西湖区\"}","utf-8");
+		   	httpPost.setEntity(entity2);
+		   	httpclient=HttpClients.createDefault();
+		   	HttpPost httpPost3=new HttpPost("http://study-perf.qa.netease.com//fgadmin/address/new");
+		   	httpPost3.setHeader("Content-Type", "application/json");
+		   	StringEntity entity3=new StringEntity("{\"receiverName\":\"张三\",\"cellPhone\":\"12345678901\",\"addressDetail\":\"南京大学\""+",\"province\":\"安徽省\",\"city\":\"南京市\",\"area\":\"西湖区\"}","utf-8");
+		   	httpPost.setEntity(entity3);
+		   	httpclient=HttpClients.createDefault();
+		   	HttpPost httpPost4=new HttpPost("http://study-perf.qa.netease.com//fgadmin/address/new");
+		   	httpPost4.setHeader("Content-Type", "application/json");
+		   	StringEntity entity4=new StringEntity("{\"receiverName\":\"张四\",\"cellPhone\":\"12345678901\",\"addressDetail\":\"南京大学\""+",\"province\":\"安徽省\",\"city\":\"南京市\",\"area\":\"西湖区\"}","utf-8");
+		   	httpPost.setEntity(entity4);
+		   	httpclient=HttpClients.createDefault();
+		   	HttpPost httpPost5=new HttpPost("http://study-perf.qa.netease.com//fgadmin/address/new");
+		   	httpPost5.setHeader("Content-Type", "application/json");
+		   	StringEntity entity5=new StringEntity("{\"receiverName\":\"张五\",\"cellPhone\":\"12345678901\",\"addressDetail\":\"南京大学\""+",\"province\":\"安徽省\",\"city\":\"南京市\",\"area\":\"西湖区\"}","utf-8");
+		   	httpPost.setEntity(entity5);
+		   	httpclient=HttpClients.createDefault();
+		   	HttpPost httpPost6=new HttpPost("http://study-perf.qa.netease.com//fgadmin/address/new");
+		   	httpPost6.setHeader("Content-Type", "application/json");
+		   	StringEntity entity6=new StringEntity("{\"receiverName\":\"张六\",\"cellPhone\":\"12345678901\",\"addressDetail\":\"南京大学\""+",\"province\":\"安徽省\",\"city\":\"南京市\",\"area\":\"西湖区\"}","utf-8");
+		   	httpPost.setEntity(entity6);
+		   	response=httpclient.execute(httpPost6);
+		   	HttpEntity httpEntity=response.getEntity();
+		   	System.out.println(EntityUtils.toString(httpEntity));
+		   	EntityUtils.consume(httpEntity);
+	     }catch(Exception e) {
+	    	e.printStackTrace();
+	    }
+	}
+	
+
+
+	@Test
+	public void TestAdd21() throws Exception {
+		try {
+    		httpclient=HttpClients.createDefault();
+    		HttpPost httpPost1=new HttpPost("http://study-perf.qa.netease.com/common/fgadmin/login");
+    		httpPost1.setHeader("Content-Type", "application/json");
+    		StringEntity entity1=new StringEntity("{\"phoneArea\":\"86\",\"phoneNumber\":\"20000000000\","+"\"password\":\"netease123\"}","utf-8");
+    		httpPost1.setEntity(entity1);
+    		response=httpclient.execute(httpPost1);
+    		HttpEntity httpEntity1=response.getEntity();
+    		HttpPost httpPost=new HttpPost("http://study-perf.qa.netease.com//fgadmin/address/new");
+    		httpPost.setHeader("Content-Type", "application/json");
+    		StringEntity entity=new StringEntity("{\"receiverName\":\"张三\",\"cellPhone\":\"12345678901\","+"\"addressDetail\":\"浙江大学\",\"province\":\"浙江省\",\"city\":\"杭州市\",\"area\":\"滨江区\"}","utf-8");
+    		httpPost.setEntity(entity);
+    		response=httpclient.execute(httpPost);
+    		HttpEntity httpEntity=response.getEntity();
+    		System.out.println(EntityUtils.toString(httpEntity));
+    		EntityUtils.consume(httpEntity);
+    	}catch(Exception e) {
+    		e.printStackTrace();
+    	}
+	}
+	
+
+
+	@Test
+	public void TestAdd22() throws Exception {
+		try {
+    		httpclient=HttpClients.createDefault();
+    		HttpPost httpPost1=new HttpPost("http://study-perf.qa.netease.com/common/fgadmin/login");
+    		httpPost1.setHeader("Content-Type", "application/json");
+    		StringEntity entity1=new StringEntity("{\"phoneArea\":\"86\",\"phoneNumber\":\"20000000000\","+"\"password\":\"netease123\"}","utf-8");
+    		httpPost1.setEntity(entity1);
+    		response=httpclient.execute(httpPost1);
+    		HttpEntity httpEntity1=response.getEntity();
+    		HttpPost httpPost=new HttpPost("http://study-perf.qa.netease.com//fgadmin/address/new");
+    		httpPost.setHeader("Content-Type", "application/json");
+    		StringEntity entity=new StringEntity("{\"receiverName\":\"\",\"cellPhone\":\"12345678901\","+"\"addressDetail\":\"浙江大学\",\"province\":\"浙江省\",\"city\":\"杭州市\",\"area\":\"滨江区\"}","utf-8");
+    		httpPost.setEntity(entity);
+    		response=httpclient.execute(httpPost);
+    		HttpEntity httpEntity=response.getEntity();
+    		System.out.println(EntityUtils.toString(httpEntity));
+    		EntityUtils.consume(httpEntity);
+    	}catch(Exception e) {
+    		e.printStackTrace();
+    	}
+	}
+	
+
+
+	@Test
+	public void TestAdd23() throws Exception {
+		try {
+    		httpclient=HttpClients.createDefault();
+    		HttpPost httpPost1=new HttpPost("http://study-perf.qa.netease.com/common/fgadmin/login");
+    		httpPost1.setHeader("Content-Type", "application/json");
+    		StringEntity entity1=new StringEntity("{\"phoneArea\":\"86\",\"phoneNumber\":\"20000000000\","+"\"password\":\"netease123\"}","utf-8");
+    		httpPost1.setEntity(entity1);
+    		response=httpclient.execute(httpPost1);
+    		HttpEntity httpEntity1=response.getEntity();
+    		HttpPost httpPost=new HttpPost("http://study-perf.qa.netease.com//fgadmin/address/new");
+    		httpPost.setHeader("Content-Type", "application/json");
+    		StringEntity entity=new StringEntity("{\"receiverName\":\"张三\",\"cellPhone\":,"+"\"addressDetail\":\"浙江大学\",\"province\":\"浙江省\",\"city\":\"杭州市\",\"area\":\"滨江区\"}","utf-8");
+    		httpPost.setEntity(entity);
+    		response=httpclient.execute(httpPost);
+    		HttpEntity httpEntity=response.getEntity();
+    		System.out.println(EntityUtils.toString(httpEntity));
+    		EntityUtils.consume(httpEntity);
+    	}catch(Exception e) {
+    		e.printStackTrace();
+    	}
+	}
 }
