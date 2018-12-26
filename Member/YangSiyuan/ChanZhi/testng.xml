@@ -1,0 +1,66 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="s1" verbose="1" >
+	<listeners> 
+		<listener class-name="com.webtest.core.WebTestListener" /> 
+	</listeners>
+
+	<test name="test1">
+		<classes>
+			<class name="com.webtest.demo.Back_Login"/>
+			<class name="com.webtest.demo.Set_DesignList"/>
+			<class name="com.webtest.demo.Publish_Blog"/>	
+			<class name="com.webtest.demo.Add_CompanyAddress"/>	
+			<class name="com.webtest.demo.Add_Content"/>
+			<class name="com.webtest.demo.Add_Essay"/>
+			<class name="com.webtest.demo.Add_Interface"/>
+			<class name="com.webtest.demo.Add_Mailbox"/>
+			<class name="com.webtest.demo.Add_Product"/>
+			<class name="com.webtest.demo.Add_ScoreRule"/>
+			<class name="com.webtest.demo.Add_Single"/>		
+			<class name="com.webtest.demo.Add_Filesupload"/>
+			<class name="com.webtest.demo.Add_Securitycode"/>
+			<class name="com.webtest.demo.Add_Setting"/>
+			<class name="com.webtest.demo.Add_Whitelist"/>
+			<class name="com.webtest.demo.Backup_Restore"/>
+			<class name="com.webtest.demo.Batch_Submission"/>
+			<class name="com.webtest.demo.CDN_Setting"/>
+			<class name="com.webtest.demo.Domain_Setting"/>
+			<class name="com.webtest.demo.Editing_Keywords"/>
+			<class name="com.webtest.demo.Friendship_Link"/>
+			<class name="com.webtest.demo.Front_Login"/>
+			<class name="com.webtest.demo.Hand_Book"/>
+			<class name="com.webtest.demo.Integral_Settlement"/>
+			<class name="com.webtest.demo.Maintain_Class"/>
+			<class name="com.webtest.demo.Maintenance_Category_Blog"/>
+			<class name="com.webtest.demo.Maintenance_Category_Essay"/>
+			<class name="com.webtest.demo.Membership_Points"/>
+			<class name="com.webtest.demo.New_Group"/>
+			<class name="com.webtest.demo.Plate_Management"/>
+			<class name="com.webtest.demo.Publish_Blog"/>
+			<class name="com.webtest.demo.Registration_Agreement"/>
+			<class name="com.webtest.demo.Rotary_Graph"/>
+			<class name="com.webtest.demo.Setting_Language"/>
+			<class name="com.webtest.demo.Setting_Up"/>
+			<class name="com.webtest.demo.Site_Setting"/>
+			<class name="com.webtest.demo.Update_Search"/>
+			<class name="com.webtest.demo.Add_Css"/>
+			<class name="com.webtest.demo.Add_Js"/>
+			<class name="com.webtest.demo.Add_Style"/>
+			<class name="com.webtest.demo.Set_AddressType"/>
+			<class name="com.webtest.demo.Set_Administrator"/>
+			<class name="com.webtest.demo.Set_Cache"/>
+			<class name="com.webtest.demo.Set_DesignThumbnail"/>
+			<class name="com.webtest.demo.Set_DomainName"/>
+			<class name="com.webtest.demo.Set_FlowStatistics"/>
+			<class name="com.webtest.demo.Set_Security"/>
+			
+			<class name="com.webtest.demo.Add_Blacklist"/>
+			<class name="com.webtest.demo.Expressage"/>
+			
+			<class name="com.webtest.demo.Set_BearNumber"/>
+			<class name="com.webtest.demo.Add_CompanyMessage"/>
+		</classes>
+		
+	</test>
+</suite>
