@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-9">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="libs/c3p0-0.9.1.2.jar"/>
+	<classpathentry kind="lib" path="libs/commons-collections4-4.2.jar"/>
+	<classpathentry kind="lib" path="libs/commons-compress-1.18.jar"/>
+	<classpathentry kind="lib" path="libs/cos-26Dec2008.jar"/>
+	<classpathentry kind="lib" path="libs/fastjson-1.2.21.jar"/>
+	<classpathentry kind="lib" path="libs/freemarker-2.3.20.jar"/>
+	<classpathentry kind="lib" path="libs/jetty-server-8.1.8.jar"/>
+	<classpathentry kind="lib" path="libs/jfinal-2.2-bin-with-src.jar"/>
+	<classpathentry kind="lib" path="libs/json-20151123.jar"/>
+	<classpathentry kind="lib" path="libs/json-lib-2.4-jdk15.jar"/>
+	<classpathentry kind="lib" path="libs/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="libs/log4j-api-2.11.1.jar"/>
+	<classpathentry kind="lib" path="libs/log4j-core-2.11.1.jar"/>
+	<classpathentry kind="lib" path="libs/mysql-connector-java-5.1.20-bin.jar"/>
+	<classpathentry kind="lib" path="libs/mysql-connector-java-5.1.39-bin.jar"/>
+	<classpathentry kind="lib" path="libs/poi-4.0.0.jar"/>
+	<classpathentry kind="lib" path="libs/poi-ooxml-4.0.0.jar"/>
+	<classpathentry kind="lib" path="libs/poi-ooxml-schemas-4.0.0.jar"/>
+	<classpathentry kind="lib" path="libs/selenium-server-standalone-3.6.0.jar"/>
+	<classpathentry kind="lib" path="libs/testng.jar"/>
+	<classpathentry kind="lib" path="libs/xmlbeans-3.0.1.jar"/>
+	<classpathentry kind="lib" path="/ChanZhi/lib/reportng-1.1.4.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
